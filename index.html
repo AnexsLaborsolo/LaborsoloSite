@@ -1,639 +1,1434 @@
-<!DOCTYPE html>
-<html lang="br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="revisit-after" content="1 day">
-    <meta name="distribution" content="Global">
-    <meta name="language" content="br">
-    <style>
-        .grecaptcha-badge{
-            opacity: 0 !important;
-        }
-    </style>
-    
-<title>Laborsolo
-</title>
-<meta  name="description" content="Análise de solo, folha, fertilizantes, corretivos com atendimento para todo o Brasil. Envie sua amostra e tenha a base para altas produtividades." />
-<meta  name="robots" content="" />
-<meta  property="og:type" content="website" />
-<meta  property="og:locale" content="PT" />
-<meta  property="og:site_name" content="Laborsolo" />
-<meta  property="og:title" content="Laborsolo" />
-<meta  property="og:url" content="https://laborsolo.com.br" />
-<meta  property="og:description" content="Análise de solo, folha, fertilizantes, corretivos com atendimento para todo o Brasil. Envie sua amostra e tenha a base para altas produtividades." />
-<meta  itemprop="name" content="Laborsolo" />
-<meta  itemprop="description" content="Análise de solo, folha, fertilizantes, corretivos com atendimento para todo o Brasil. Envie sua amostra e tenha a base para altas produtividades." />
-<meta  name="twitter:title" content="Laborsolo" />
-<meta  name="twitter:description" content="Análise de solo, folha, fertilizantes, corretivos com atendimento para todo o Brasil. Envie sua amostra e tenha a base para altas produtividades." />
-<meta  name="twitter:site" content="Laborsolo" />
-<link  rel="canonical" href="https://laborsolo.com.br" />
-<link  rel="shortcut icon" type="image/png" href="/uploads/config/favicon_1584449860.png" />
-<link  rel="apple-touch-icon-precomposed" href="/uploads/config/favicon_1584449860.png" />
-<link  rel="apple-touch-icon-precomposed" sizes="72x72" href="/68" />
-<link  rel="apple-touch-icon-precomposed" sizes="114x114" href="/image/png" />
-<link  rel="apple-touch-icon-precomposed" sizes="144x144" href="/image/png" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Laborsolo | Análises agronômicas para decisões no campo e na indústria</title>
+<meta name="description" content="Laboratório de análises agronômicas em Londrina/PR: solo, tecido vegetal, fertilizantes, corretivos, água, vinhaça e nutrição animal. Acreditação ISO/IEC 17025. Fale com a equipe comercial.">
+<meta name="theme-color" content="#0d3732">
+<meta property="og:title" content="Laborsolo | Transformar análises em decisões">
+<meta property="og:description" content="Solo, planta, insumos, água e nutrição animal em um só laboratório. Fale com a equipe comercial.">
+<link rel="icon" href="assets/img/favicon.png">
+<style>
+@font-face{font-family:"Saira";src:url(assets/fonts/saira.woff2) format("woff2");font-weight:100 900;font-stretch:50% 125%;font-style:normal;font-display:swap}
+@font-face{font-family:"Instrument Sans";src:url(assets/fonts/instrument.woff2) format("woff2");font-weight:400 700;font-stretch:75% 100%;font-style:normal;font-display:swap}
 
-    
-    <meta name="csrf-token" content="uX0RaGjsoDm0TYs75R4ufTZIC8FCPxOZk4J4V1ab">
+:root{
+  --forest:#0d3732; --forest-2:#08241f; --forest-3:#134a43;
+  --ink:#1b2a31; --ink-2:#3b4d52; --muted:#53666a;
+  --paper:#eef2ef; --paper-2:#e2e9e5; --paper-3:#d5dfda; --white:#fafcfb;
+  --line:#cfdad5; --line-dark:rgba(214,234,226,.16);
+  --orange:#e5891a; --orange-ink:#985004; --lime:#9cc92a; --lime-ink:#476f0c; --teal:#0e6170;
+  --on-dark:#e7f1ec; --on-dark-2:#b7d3c8;
+  --wa:#25d366; --wa-h:#1fc05c; --wa-ink:#05291a;
+  --display:"Saira","Arial Narrow",Arial,sans-serif;
+  --sans:"Instrument Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  --ease-out:cubic-bezier(.23,1,.32,1);
+  --ease-expo:cubic-bezier(.19,1,.22,1);
+  --ease-io:cubic-bezier(.645,.045,.355,1);
+  --wrap:1280px; --gut:clamp(20px,4vw,56px);
+  --r:14px;
+  --shadow:0 18px 40px -18px rgba(8,36,31,.32),0 2px 6px rgba(8,36,31,.06);
+  --shadow-lg:0 40px 80px -30px rgba(8,36,31,.42),0 6px 16px rgba(8,36,31,.08);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:88px;background:var(--paper)}
+body{margin:0;font-family:var(--sans);font-size:17px;line-height:1.6;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button{font:inherit;color:inherit}
+::selection{background:var(--lime);color:var(--forest-2)}
+:focus-visible{outline:2px solid var(--orange);outline-offset:3px;border-radius:6px}
+input,textarea{caret-color:var(--orange)}
+html{scrollbar-color:#a9bab3 var(--paper)}
+::-webkit-scrollbar{width:11px;height:11px}
+::-webkit-scrollbar-track{background:var(--paper)}
+::-webkit-scrollbar-thumb{background:#b3c3bc;border-radius:99px;border:3px solid var(--paper)}
+.wrap{width:min(var(--wrap),100% - var(--gut)*2);margin-inline:auto}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.ic{width:18px;height:18px;flex:none;display:block}
 
-    <link href="/css/site/app.css" rel="stylesheet">
+/* type */
+h1,h2,h3{font-family:var(--display);font-weight:600;font-stretch:88%;letter-spacing:-.028em;line-height:.98;margin:0;text-wrap:balance;color:inherit}
+h1{font-size:clamp(3.1rem,7.6vw,6rem);font-weight:650}
+h2{font-size:clamp(2.35rem,4.6vw,4rem)}
+h3{font-size:clamp(1.45rem,2vw,1.85rem);line-height:1.08;letter-spacing:-.02em}
+h1 em,h2 em{font-style:normal;color:var(--teal)}
+.dark h2 em,.on-photo h1 em,.proc h2 em{color:var(--lime)}
+p{margin:0}
+.lede{font-size:clamp(1.12rem,1.5vw,1.3rem);line-height:1.55;color:var(--ink-2);max-width:60ch}
+.dark .lede{color:var(--on-dark-2)}
+.small{font-size:.9rem;color:var(--muted)}
+.num{font-variant-numeric:tabular-nums}
 
-            <!-- Global site tag (gtag.js) - Google Ads: 977385197 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-977385197"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+/* buttons */
+.btn{--bg:var(--orange);--fg:#1d1203;display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 22px;border-radius:999px;border:0;background:var(--bg);color:var(--fg);font-weight:600;font-size:.98rem;letter-spacing:-.005em;text-decoration:none;cursor:pointer;white-space:nowrap;transition:background-color .18s ease,color .18s ease,box-shadow .18s ease,transform .12s var(--ease-out)}
+.btn:active{transform:scale(.97)}
+@media (hover:hover) and (pointer:fine){.btn:hover{--bg:#f09a2e}}
+.btn-wa{--bg:var(--wa);--fg:var(--wa-ink)}
+@media (hover:hover) and (pointer:fine){.btn-wa:hover{--bg:var(--wa-h)}}
+.btn-ghost{--bg:transparent;--fg:var(--ink);box-shadow:inset 0 0 0 1px var(--line)}
+@media (hover:hover) and (pointer:fine){.btn-ghost:hover{--bg:var(--paper-2)}}
+.dark .btn-ghost,.on-photo .btn-ghost{--fg:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.35)}
+@media (hover:hover) and (pointer:fine){.dark .btn-ghost:hover,.on-photo .btn-ghost:hover{--bg:rgba(255,255,255,.1)}}
+.btn-sm{min-height:40px;padding:0 16px;font-size:.92rem}
+.link{display:inline-flex;align-items:center;gap:8px;font-weight:600;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px;text-decoration-color:color-mix(in srgb,currentColor 35%,transparent);transition:text-decoration-color .18s ease}
+.link:hover{text-decoration-color:currentColor}
 
-  gtag('config', 'AW-977385197');
-</script>
-    
-            <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1522468974450885');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1522468974450885&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-                                    <style>
-                                #homeproduto-1{
-                                    background-color: #2B1E0B !important;
-                                }
-                                #homeproduto-1:hover .img-bg:before{
-                                    background: #2B1E0B !important;
-                                }
-                            </style>
-                                                    <style>
-                                #homeproduto-2{
-                                    background-color: #477215 !important;
-                                }
-                                #homeproduto-2:hover .img-bg:before{
-                                    background: #477215 !important;
-                                }
-                            </style>
-                                                    <style>
-                                #homeproduto-3{
-                                    background-color: #1E67A2 !important;
-                                }
-                                #homeproduto-3:hover .img-bg:before{
-                                    background: #1E67A2 !important;
-                                }
-                            </style>
-                                                    <style>
-                                #homeproduto-4{
-                                    background-color: #6C5F4F !important;
-                                }
-                                #homeproduto-4:hover .img-bg:before{
-                                    background: #6C5F4F !important;
-                                }
-                            </style>
-                                                    <style>
-                                #homeproduto-5{
-                                    background-color: #768887 !important;
-                                }
-                                #homeproduto-5:hover .img-bg:before{
-                                    background: #768887 !important;
-                                }
-                            </style>
-                        
-    <script type='text/javascript' src='//lgpdfacil.site/api/v1/696379074120448.js'></script>
+/* header */
+.hdr{position:fixed;inset:0 0 auto;z-index:50;transition:background-color .25s ease,box-shadow .25s ease,color .25s ease;color:#fff}
+.hdr .in{display:flex;align-items:center;gap:28px;height:76px}
+.hdr .logo{display:block;flex:none}
+.hdr .logo img{height:40px;width:auto}
+.hdr .logo .l-dark{display:none}
+.hdr nav{display:flex;gap:26px;margin-left:auto}
+.hdr nav a{text-decoration:none;font-size:.95rem;font-weight:500;opacity:.88;transition:opacity .18s ease}
+.hdr nav a:hover{opacity:1}
+.hdr .acts{display:flex;gap:10px;align-items:center}
+.hdr.solid{background:rgba(238,242,239,.94);-webkit-backdrop-filter:saturate(1.4) blur(14px);backdrop-filter:saturate(1.4) blur(14px);box-shadow:0 1px 0 var(--line);color:var(--ink)}
+.hdr.solid .logo .l-light{display:none}.hdr.solid .logo .l-dark{display:block}
+.hdr:not(.solid) .btn-ghost{--fg:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.4)}
+.hdr.solid .btn-ghost{--fg:var(--ink);box-shadow:inset 0 0 0 1px var(--line)}
+.menu-btn{display:none;margin-left:auto;width:44px;height:44px;border-radius:12px;border:0;background:transparent;cursor:pointer;align-items:center;justify-content:center}
+.menu-btn .ic{width:24px;height:24px}
 
-<script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/dc07af7e-9d83-4d68-98ff-af1433046e57-loader.js" ></script>
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff;background:var(--forest-2);overflow:hidden;isolation:isolate}
+.hero .bg{position:absolute;inset:0;z-index:-2}
+.hero .bg img{width:100%;height:100%;object-fit:cover;object-position:center 62%}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(6,30,26,.9) 0%,rgba(8,40,35,.66) 42%,rgba(8,40,35,.08) 78%),linear-gradient(0deg,rgba(6,28,24,.92) 0%,rgba(6,28,24,0) 55%)}
+.hero .in{padding:150px 0 clamp(40px,6vw,72px)}
+.hero h1{max-width:13ch;color:#fff}
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.06em;margin-bottom:-.06em}
+.hero h1 .ln>span{display:block}
+.hero .lede{color:#dbe7e2;margin-top:28px;max-width:52ch}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.strata{display:grid;gap:3px;width:56px}.strata i{display:block;height:5px;border-radius:3px}.strata i:nth-child(1){background:#2a6f86}.strata i:nth-child(2){background:var(--lime)}.strata i:nth-child(3){background:var(--orange)}
+.proof{display:flex;flex-wrap:wrap;gap:0;margin-top:22px;border-top:1px solid rgba(255,255,255,.2);padding-top:22px;font-size:.92rem;color:#d3e0db}
+.proof li{list-style:none;padding:0 26px;border-left:1px solid rgba(255,255,255,.2);line-height:1.45}
+.proof li:first-child{padding-left:0;border-left:0}
+.proof b{display:block;color:#fff;font-weight:600;font-size:1rem}
+.proof{margin-left:0;padding-left:0}
 
+/* hero authored moment */
+.js .hero h1 .ln>span{transform:translateY(105%);filter:blur(6px)}
+.js .hero .rv{opacity:0;transform:translateY(14px)}
+.js .hero .bg img{transform:scale(1.08)}
+.ready .hero h1 .ln>span{transform:none;filter:none;transition:transform 1.1s var(--ease-expo),filter .9s var(--ease-out)}
+.ready .hero h1 .ln:nth-child(2)>span{transition-delay:.09s}
+.ready .hero h1 .ln:nth-child(3)>span{transition-delay:.18s}
+.ready .hero .rv{opacity:1;transform:none;transition:opacity .8s var(--ease-out) .45s,transform .8s var(--ease-out) .45s}
+.ready .hero .rv.d2{transition-delay:.58s}
+.ready .hero .rv.d3{transition-delay:.72s}
+.ready .hero .bg img{transform:none;transition:transform 2.4s var(--ease-out)}
 
+/* sections */
+section{position:relative}
+.sec{padding:clamp(88px,11vw,160px) 0}
+.sec-sm{padding:clamp(64px,8vw,112px) 0}
+.dark{background:var(--forest);color:var(--on-dark)}
+.dark h2,.dark h3{color:#fff}
+.head{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(28px,5vw,80px);align-items:end;margin-bottom:clamp(40px,5vw,64px)}
 
+/* análises */
+.analises{background:var(--paper)}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.chip{min-height:40px;padding:0 16px;border-radius:999px;border:1px solid var(--line);background:transparent;font-size:.92rem;font-weight:500;color:var(--ink-2);cursor:pointer;transition:background-color .18s ease,color .18s ease,border-color .18s ease}
+@media (hover:hover) and (pointer:fine){.chip:hover{background:var(--paper-2)}}
+.chip[aria-pressed="true"]{background:var(--forest);border-color:var(--forest);color:#fff}
+.chip .n{opacity:.6;margin-left:6px;font-variant-numeric:tabular-nums}
+.cat{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(28px,4vw,64px);align-items:start}
+.list{border-top:1px solid var(--line)}
+.grp{padding:22px 0 6px;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:var(--muted)}
+.grp[hidden]{display:none}
+.item{all:unset;box-sizing:border-box;width:100%;display:grid;grid-template-columns:1fr auto;align-items:center;gap:16px;padding:15px 4px 15px 0;border-bottom:1px solid var(--line);cursor:pointer;position:relative}
+.item[hidden]{display:none}
+.item .t{font-family:var(--display);font-size:1.42rem;font-weight:550;font-stretch:92%;letter-spacing:-.015em;line-height:1.2;transition:color .18s ease,transform .25s var(--ease-out)}
+.item .tag{font-size:.78rem;color:var(--muted);font-weight:500}
+.item .arr{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;color:var(--forest);opacity:0;transform:translateX(-6px);transition:opacity .2s var(--ease-out),transform .25s var(--ease-out),background-color .18s ease}
+.item .arr .ic{width:16px;height:16px}
+@media (hover:hover) and (pointer:fine){.item:hover .t{color:var(--forest-3);transform:translateX(4px)}.item:hover .arr{opacity:1;transform:none}}
+.item[aria-current="true"] .t{color:var(--orange-ink);transform:translateX(4px)}
+.item[aria-current="true"] .arr{opacity:1;transform:none;background:var(--orange);color:#1d1203}
+.item:focus-visible{outline:2px solid var(--orange);outline-offset:-2px}
 
+.viewer{position:sticky;top:100px;background:var(--white);border-radius:20px;box-shadow:var(--shadow-lg);overflow:hidden}
+.viewer .doc{position:relative;background:var(--paper-2);height:min(58vh,560px);overflow:hidden;cursor:zoom-in;display:block;width:100%;border:0;padding:0}
+.viewer .doc img{position:absolute;left:50%;top:28px;width:min(78%,440px);transform:translateX(-50%);border-radius:4px;box-shadow:0 24px 50px -20px rgba(8,36,31,.4),0 2px 6px rgba(8,36,31,.08);background:#fff;transition:opacity .22s var(--ease-out),transform .45s var(--ease-out)}
+.viewer .doc.swap img{opacity:0;transform:translateX(-50%) translateY(10px)}
+.viewer .doc .zoom{position:absolute;right:16px;bottom:16px;display:inline-flex;align-items:center;gap:8px;background:rgba(13,55,50,.92);color:#fff;font-size:.82rem;font-weight:600;padding:8px 14px;border-radius:999px}
+.viewer .doc::after{content:"";position:absolute;inset:auto 0 0;height:90px;background:linear-gradient(0deg,var(--paper-2),rgba(226,233,229,0));pointer-events:none}
+.viewer .doc .zoom{z-index:2}
+.viewer .body{padding:26px 30px 30px}
+.viewer .meta{font-size:.82rem;font-weight:600;color:var(--lime-ink);letter-spacing:.02em}
+.viewer h3{margin:6px 0 10px}
+.viewer p{color:var(--ink-2);max-width:56ch}
+.viewer .note{font-size:.84rem;color:var(--muted);margin-top:8px}
+.viewer .acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.viewer.swap .body>*{opacity:0}
+.viewer .body>*{transition:opacity .2s var(--ease-out)}
 
+/* band CTA */
+.band{background:var(--forest-2);color:var(--on-dark);overflow:hidden}
+.band .in{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(36px,6vw,96px);align-items:center}
+.band h2{color:#fff}
+.band .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.vals{margin:0;padding:0;list-style:none;border-top:1px solid var(--line-dark)}
+.vals li{padding:20px 0;border-bottom:1px solid var(--line-dark);display:grid;grid-template-columns:28px 1fr;gap:14px}
+.vals .ic{color:var(--lime);margin-top:4px}
+.vals b{display:block;color:#fff;font-weight:600;font-size:1.04rem}
+.vals span{color:var(--on-dark-2);font-size:.95rem;line-height:1.5}
 
+/* solo integrado */
+.solo .grid{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:clamp(36px,6vw,96px);align-items:center}
+.solo .pics{position:relative;aspect-ratio:4/4.6}
+.solo .pics .p1{position:absolute;inset:0 18% 0 0;width:82%;height:100%;object-fit:cover;border-radius:22px}
+.solo .pics .p2{position:absolute;right:0;bottom:8%;width:46%;aspect-ratio:1;object-fit:cover;border-radius:50%;border:10px solid var(--paper);box-shadow:var(--shadow)}
+.pill-rows{margin:34px 0 0;padding:0;list-style:none;border-top:1px solid var(--line)}
+.pill-rows li{display:grid;grid-template-columns:120px 1fr;gap:18px;padding:22px 0;border-bottom:1px solid var(--line)}
+.pill-rows .k{font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--orange-ink);padding-top:5px}
+.pill-rows b{display:block;font-family:var(--display);font-weight:600;font-stretch:92%;font-size:1.42rem;letter-spacing:-.015em;line-height:1.2;margin-bottom:4px}
+.pill-rows p{color:var(--ink-2);font-size:.98rem}
+.zoom3{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.zoom3 button{all:unset;cursor:pointer;font-size:.86rem;font-weight:600;color:var(--forest);padding:6px 12px;border-radius:999px;background:var(--paper-2);transition:background-color .18s ease}
+.zoom3 button:hover{background:var(--paper-3)}
+.zoom3 button:focus-visible{outline:2px solid var(--orange);outline-offset:2px}
 
+/* DRIS */
+.dris{background:var(--paper-2)}
+.dris .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:clamp(36px,6vw,96px);align-items:center}
+.facts{display:flex;flex-wrap:wrap;gap:0;margin-top:36px;padding:0;list-style:none}
+.facts li{padding:0 28px;border-left:1px solid var(--line)}
+.facts li:first-child{padding-left:0;border-left:0}
+.facts b{display:block;font-family:var(--display);font-size:2.6rem;font-weight:600;font-stretch:88%;letter-spacing:-.02em;line-height:1.05;color:var(--forest)}
+.facts span{font-size:.9rem;color:var(--muted)}
+.dris .paper{transform:rotate(-1.6deg);border-radius:6px;box-shadow:var(--shadow-lg);background:#fff;max-width:520px;margin-left:auto;cursor:zoom-in;border:0;padding:0;display:block}
+.dris .paper img{border-radius:6px}
+.dris .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
 
+/* processo */
+.proc{position:relative;min-height:clamp(480px,70vh,720px);display:flex;align-items:flex-end;color:#fff;overflow:hidden;isolation:isolate}
+.proc img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.proc::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(6,28,24,.9) 0%,rgba(6,28,24,.2) 60%),linear-gradient(90deg,rgba(6,28,24,.5),transparent 60%)}
+.proc .in{padding-bottom:clamp(48px,7vw,96px)}
+.proc h2{max-width:14ch}
+.proc .lede{color:#dbe7e2;margin-top:20px;max-width:50ch}
 
+/* qualidade */
+.qual .grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(36px,6vw,96px);align-items:start}
+.seals{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.seal{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:26px 18px 22px;display:flex;flex-direction:column;align-items:center;text-align:center;background:var(--white)}
+.seal .lg{height:84px;width:100%;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.seal img{max-height:84px;max-width:120px;width:auto;object-fit:contain;mix-blend-mode:multiply}
+.seal b{font-size:.98rem;font-weight:650}
+.seal span{font-size:.82rem;color:var(--muted);line-height:1.4;margin-top:4px;max-width:22ch}
+
+/* sobre */
+.sobre .grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(36px,6vw,96px);align-items:center}
+.sobre .pics{display:grid;grid-template-columns:1.1fr .9fr;gap:14px;align-items:end}
+.sobre .pics img{width:100%;object-fit:cover;border-radius:20px}
+.sobre .pics .a{aspect-ratio:4/4.8;object-position:30% center}
+.sobre .pics .b{aspect-ratio:4/4.4;margin-bottom:-36px;object-position:center 60%}
+.dl{margin:34px 0 0;border-top:1px solid var(--line)}
+.dl div{display:grid;grid-template-columns:150px 1fr;gap:18px;padding:18px 0;border-bottom:1px solid var(--line)}
+.dl dt{font-weight:650}
+.dl dd{margin:0;color:var(--ink-2);font-size:.98rem}
+
+/* digital */
+.digital{overflow:hidden}
+.digital .grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(36px,5vw,72px);align-items:center}
+.feat{margin:30px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;column-gap:28px;border-top:1px solid var(--line-dark)}
+.feat li{display:flex;gap:12px;align-items:center;padding:15px 0;border-bottom:1px solid var(--line-dark);font-weight:500;color:#fff}
+.feat .ic{color:var(--lime);width:17px;height:17px}
+.digital .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.screens{position:relative;aspect-ratio:1/.82}
+.screens .desk{position:absolute;right:-6%;top:12%;width:94%;border-radius:14px;box-shadow:0 40px 80px -24px rgba(0,0,0,.6);z-index:2;border:6px solid #12302c}
+.screens .phone{position:absolute;left:0;top:0;width:34%;border-radius:22px;box-shadow:0 40px 80px -24px rgba(0,0,0,.6);z-index:1}
+
+/* ebooks */
+.ebooks .rail{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:clamp(16px,2vw,28px)}
+.eb{display:flex;flex-direction:column;text-decoration:none;color:inherit}
+.eb .cv{position:relative;aspect-ratio:3/4;border-radius:10px;overflow:hidden;background:var(--paper-2);box-shadow:var(--shadow);transition:transform .4s var(--ease-out),box-shadow .4s var(--ease-out)}
+.eb .cv img{width:100%;height:100%;object-fit:cover}
+@media (hover:hover) and (pointer:fine){.eb:hover .cv{transform:translateY(-6px);box-shadow:var(--shadow-lg)}}
+.eb h3{font-size:1.24rem;margin-top:18px;line-height:1.15}
+.eb p{font-size:.92rem;color:var(--muted);margin-top:6px;line-height:1.45}
+.eb .go{margin-top:12px;font-size:.92rem}
+.ebooks .foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px;margin-top:48px;padding-top:24px;border-top:1px solid var(--line)}
+.eb .ty{margin-top:18px;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--lime-ink)}
+.eb .ty+h3{margin-top:6px}
+
+/* formulário de material */
+[hidden]{display:none!important}
+.ldlg{width:min(620px,calc(100% - 32px))}
+.dlg.ldlg .sc{background:var(--white)}
+.lhead{display:flex;gap:16px;align-items:center;margin-bottom:20px}
+.dlg .sc .lhead img{width:64px;max-width:64px;margin:0;aspect-ratio:3/4;object-fit:cover;border-radius:6px;box-shadow:var(--shadow);background:var(--paper-2);flex:none}
+.lhead p{font-size:.95rem;color:var(--ink-2)}
+.lf{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px 16px}
+.lf .full{grid-column:1/-1}
+.lf label,.lf legend{display:block;font-size:.88rem;font-weight:600;margin-bottom:6px}
+.lf fieldset{border:0;margin:0;padding:0;min-width:0}
+.lf input[type=text],.lf input[type=email],.lf input[type=tel],.lf select{width:100%;min-height:46px;padding:0 14px;border:1px solid var(--line);border-radius:10px;background:#fff;font:inherit;font-size:1rem;color:var(--ink)}
+.lf input:focus-visible,.lf select:focus-visible{outline:2px solid var(--orange);outline-offset:1px}
+.lf [aria-invalid=true]{border-color:#b3261e}
+.lf .err{display:block;font-size:.82rem;color:#b3261e;margin-top:4px;min-height:0}
+.lf .err:empty{display:none}
+.lf .hint{font-size:.82rem;color:var(--muted);margin-top:4px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{display:inline-flex;align-items:center;gap:8px;margin:0;min-height:40px;padding:0 14px;border:1px solid var(--line);border-radius:999px;font-weight:500;font-size:.9rem;cursor:pointer;background:#fff}
+.chips input{accent-color:var(--forest)}
+.chips label:has(input:checked){border-color:var(--forest);background:color-mix(in srgb,var(--lime) 18%,#fff)}
+.consent{display:flex!important;gap:10px;align-items:flex-start;font-weight:400!important;font-size:.86rem!important;color:var(--ink-2);line-height:1.45}
+.consent input{margin-top:3px;width:18px;height:18px;flex:none;accent-color:var(--forest)}
+.hp{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden}
+.lmsg{grid-column:1/-1;padding:12px 14px;border-radius:10px;background:#fdecea;color:#7a1c14;font-size:.92rem}
+.lmsg:empty{display:none}
+.ldone{text-align:center;padding:12px 0 4px}
+.ldone h4{font-family:var(--display);font-size:1.6rem;font-weight:600;letter-spacing:-.02em;margin:0 0 8px}
+.ldone p{color:var(--ink-2);max-width:44ch;margin:0 auto 18px}
+.ldone .acts{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+@media (max-width:640px){.lf{grid-template-columns:minmax(0,1fr)}.ldlg .bot .btn{flex:1 1 100%;justify-content:center}}
+
+/* contato */
+.contato{background:var(--forest-2);color:var(--on-dark)}
+.contato .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,6vw,96px);align-items:start}
+.contato h2{color:#fff}
+.chan{margin:0;padding:0;list-style:none;border-top:1px solid var(--line-dark)}
+.chan a{display:grid;grid-template-columns:44px 1fr auto;gap:16px;align-items:center;padding:20px 0;border-bottom:1px solid var(--line-dark);text-decoration:none;transition:background-color .18s ease}
+.chan .ico{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.08);color:#fff}
+.chan .ico.wa{background:var(--wa);color:var(--wa-ink)}
+.chan small{display:block;font-size:.8rem;color:var(--on-dark-2);letter-spacing:.02em}
+.chan b{display:block;color:#fff;font-weight:600;font-size:1.08rem}
+.chan .arrow{color:var(--on-dark-2);transition:transform .25s var(--ease-out),color .18s ease}
+@media (hover:hover) and (pointer:fine){.chan a:hover .arrow{transform:translate(3px,-3px);color:var(--lime)}}
+.ftr{background:var(--forest-2);color:var(--on-dark-2);border-top:1px solid var(--line-dark);font-size:.88rem}
+.ftr .in{display:flex;flex-wrap:wrap;gap:20px 40px;align-items:center;justify-content:space-between;padding:28px 0 36px}
+.ftr img{height:34px;width:auto}
+.ftr nav{display:flex;flex-wrap:wrap;gap:22px}
+.ftr a{text-decoration:none}.ftr a:hover{color:#fff}
+
+/* floating + mobile bar */
+.fab{position:fixed;right:24px;bottom:24px;z-index:40;display:inline-flex;align-items:center;gap:10px;padding:0 20px 0 16px;height:54px;border-radius:999px;background:var(--wa);color:var(--wa-ink);text-decoration:none;font-weight:650;box-shadow:0 18px 36px -12px rgba(8,36,31,.55);opacity:0;transform:translateY(16px) scale(.96);pointer-events:none;transition:opacity .25s var(--ease-out),transform .3s var(--ease-out),background-color .18s ease}
+.fab.on{opacity:1;transform:none;pointer-events:auto}
+.fab .ic{width:22px;height:22px}
+@media (hover:hover) and (pointer:fine){.fab:hover{background:var(--wa-h)}}
+.mbar{display:none}
+
+/* dialog */
+dialog{border:0;padding:0;background:transparent;max-width:none;max-height:none;width:100%;height:100%;color:var(--ink)}
+dialog::backdrop{background:rgba(6,24,21,.72);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+.dlg{position:absolute;inset:max(16px,3vh) 50% auto auto;transform:translateX(50%);width:min(880px,calc(100% - 32px));max-height:calc(100% - 6vh);display:grid;grid-template-rows:auto 1fr auto;background:var(--white);border-radius:18px;overflow:hidden;box-shadow:var(--shadow-lg)}
+dialog[open] .dlg{animation:dlgIn .28s var(--ease-out)}
+dialog[open]::backdrop{animation:fadeIn .28s var(--ease-out)}
+@keyframes dlgIn{from{opacity:0;transform:translateX(50%) translateY(12px) scale(.98)}}
+@keyframes fadeIn{from{opacity:0}}
+.dlg .top{display:flex;align-items:center;gap:16px;padding:16px 18px 16px 24px;border-bottom:1px solid var(--line)}
+.dlg .top h3{font-size:1.35rem}
+.dlg .top .meta{font-size:.8rem;color:var(--lime-ink);font-weight:600}
+.dlg .x{margin-left:auto;width:44px;height:44px;border-radius:12px;border:0;background:var(--paper-2);cursor:pointer;display:grid;place-items:center;flex:none}
+.dlg .x:hover{background:var(--paper-3)}
+.dlg .sc{overflow:auto;background:var(--paper-2);padding:24px;overscroll-behavior:contain}
+.dlg .sc img{margin:0 auto;width:100%;max-width:760px;border-radius:4px;box-shadow:var(--shadow);background:#fff}
+.dlg .sc .desc{max-width:760px;margin:0 auto 18px;color:var(--ink-2)}
+.dlg .bot{display:flex;flex-wrap:wrap;gap:10px;padding:16px 24px;border-top:1px solid var(--line);background:var(--white)}
+
+/* reduced motion */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .hero h1 .ln>span,.js .hero .rv,.js .hero .bg img{transform:none;filter:none;opacity:1}
+  .ready .hero h1 .ln>span,.ready .hero .rv,.ready .hero .bg img{transition:none}
+  .btn,.chip,.item .t,.item .arr,.viewer .doc img,.viewer .body>*,.eb .cv,.fab,.chan .arrow,.hdr{transition:none}
+  dialog[open] .dlg,dialog[open]::backdrop{animation:none}
+}
+
+/* responsive */
+@media (max-width:1100px){
+  .hdr nav{gap:18px}.hdr nav a{font-size:.9rem}
+  .ebooks .rail{grid-template-columns:repeat(5,minmax(210px,1fr));overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:16px;margin-inline:calc(var(--gut)*-1);padding-inline:var(--gut);scroll-padding-inline:var(--gut)}
+  .eb{scroll-snap-align:start}
+}
+@media (max-width:980px){
+  .hdr nav,.hdr .acts .btn-ghost{display:none}
+  .hdr .acts{margin-left:auto}
+  .menu-btn{display:inline-flex;margin-left:0}
+  .head,.cat,.band .in,.solo .grid,.dris .grid,.qual .grid,.sobre .grid,.digital .grid,.contato .grid{grid-template-columns:1fr}
+  .head{align-items:start}
+  .viewer{display:none}
+  .solo .pics{max-width:560px}
+  .dris .paper{margin:0 auto;max-width:440px}
+  .sobre .pics{max-width:640px}
+  .screens{max-width:680px}
+}
+@media (max-width:700px){
+  body{font-size:16px}
+  .hdr .in{height:66px}
+  .hdr .logo img{height:34px}
+  .hdr .acts .btn{display:none}
+  .hero .in{padding-top:120px}
+  .proof{flex-direction:column;gap:14px}
+  .proof li{padding:0;border-left:0}
+  .item .t{font-size:1.2rem}
+  .pill-rows li{grid-template-columns:1fr;gap:6px}
+  .facts{gap:18px 0}.facts li{padding:0 20px 0 0;border-left:0}
+  .seals{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .dl div{grid-template-columns:1fr;gap:4px}
+  .feat{grid-template-columns:1fr}
+  .fab{display:none}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:45;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(238,242,239,.96);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:0 -1px 0 var(--line);transform:translateY(110%);transition:transform .3s var(--ease-out)}
+  .mbar.on{transform:none}
+  .mbar .btn{justify-content:center;min-height:46px;padding:0 12px;font-size:.92rem}
+  body{padding-bottom:0}
+  .ftr .in{padding-bottom:110px}
+  .dlg{inset:auto 0 0 0;transform:none;width:100%;max-height:92%;border-radius:18px 18px 0 0}
+  @keyframes dlgIn{from{transform:translateY(24px);opacity:0}}
+  .dlg .sc{padding:16px}
+}
+
+/* mobile nav sheet */
+.sheet{position:fixed;inset:0;z-index:60;background:var(--forest-2);color:#fff;display:flex;flex-direction:column;padding:20px var(--gut) calc(28px + env(safe-area-inset-bottom));opacity:0;visibility:hidden;transition:opacity .22s var(--ease-out),visibility 0s .22s}
+.sheet.on{opacity:1;visibility:visible;transition:opacity .22s var(--ease-out)}
+.sheet .row{display:flex;align-items:center;justify-content:space-between;height:46px}
+.sheet .row img{height:34px}
+.sheet nav{display:flex;flex-direction:column;margin-top:36px}
+.sheet nav a{font-family:var(--display);font-weight:600;font-stretch:90%;font-size:2.1rem;letter-spacing:-.02em;text-decoration:none;padding:10px 0;border-bottom:1px solid var(--line-dark)}
+.sheet .acts{margin-top:auto;display:grid;gap:10px}
+.sheet .acts .btn{justify-content:center}
+.sheet .x{width:44px;height:44px;border-radius:12px;border:0;background:rgba(255,255,255,.08);color:#fff;display:grid;place-items:center;cursor:pointer}
+@media (prefers-reduced-motion:reduce){.sheet,.mbar{transition:none}}
+
+/* ===== MOVIMENTO ===== */
+.progress{position:fixed;left:0;top:0;height:3px;width:100%;z-index:70;transform-origin:0 50%;transform:scaleX(0);background:var(--orange);pointer-events:none}
+.hdr{transition:background-color .25s ease,box-shadow .25s ease,color .25s ease,transform .35s var(--ease-out)}
+.hdr.hide{transform:translateY(-100%)}
+/* faixa em movimento */
+.ticker{background:var(--forest-2);color:var(--on-dark);overflow:hidden;border-top:1px solid var(--line-dark);border-bottom:1px solid var(--line-dark);padding:22px 0;user-select:none}
+.ticker .track{display:flex;width:max-content;animation:tick 48s linear infinite}
+.ticker:hover .track{animation-play-state:paused}
+.ticker span{font-family:var(--display);font-weight:600;font-stretch:90%;font-size:clamp(1.6rem,3vw,2.5rem);letter-spacing:-.02em;white-space:nowrap;display:inline-flex;align-items:center}
+.ticker span::after{content:"";display:inline-block;width:34px;height:14px;margin:0 30px;background:linear-gradient(var(--teal-l) 0 4px,transparent 4px 5px,var(--lime) 5px 9px,transparent 9px 10px,var(--orange) 10px 14px);border-radius:2px}
+@keyframes tick{to{transform:translateX(-50%)}}
+:root{--teal-l:#2a8aa5}
+/* revelações */
+.anim [data-a]{transition:opacity .9s var(--ease-out),transform 1s var(--ease-expo),clip-path 1.2s var(--ease-expo),filter .9s var(--ease-out);transition-delay:var(--d,0s)}
+.anim [data-a="up"]:not(.is-in){opacity:0;transform:translateY(28px)}
+.anim [data-a="fade"]:not(.is-in){opacity:0}
+.anim [data-a="clip"]:not(.is-in){clip-path:inset(100% 0 0 0 round 20px);transform:scale(1.08)}
+.anim [data-a="clip"]{clip-path:inset(0 0 0 0 round 20px)}
+.anim [data-a="pop"]:not(.is-in){opacity:0;transform:translateY(18px) scale(.94)}
+.anim [data-a="tilt"]:not(.is-in){opacity:0;transform:translateY(60px) rotate(4deg)}
+/* títulos palavra a palavra */
+.w{display:inline-block;overflow:hidden;vertical-align:top;padding:0 .02em .1em;margin:0 -.02em -.1em}
+.w>i{display:inline-block;font-style:normal;transition:transform 1s var(--ease-expo);transition-delay:calc(var(--i)*55ms)}
+.anim h2:not(.is-in) .w>i{transform:translateY(105%)}
+/* indicador da lista */
+.list{position:relative}
+.ind{position:absolute;left:-18px;top:0;width:3px;border-radius:3px;background:var(--orange);transition:transform .45s var(--ease-io),height .45s var(--ease-io),opacity .2s ease;opacity:0;pointer-events:none}
+/* camadas com profundidade */
+[data-par]{will-change:transform}
+.anim [data-par].is-in,.anim [data-par]:not([data-a]){transition:opacity .9s var(--ease-out),clip-path 1.2s var(--ease-expo)}
+.proc img{height:124%;top:-12%}
+.eb .cv{transform-style:preserve-3d}
+.eb .cv img{transition:transform .5s var(--ease-out)}
+.eb .cv::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at var(--mx,50%) var(--my,0%),rgba(255,255,255,.28),transparent 55%);opacity:0;transition:opacity .3s ease;pointer-events:none}
+@media (hover:hover) and (pointer:fine){.eb:hover .cv::after{opacity:1}}
+.mag{transition:transform .35s var(--ease-out),background-color .18s ease,color .18s ease,box-shadow .18s ease}
+.viewer .doc img{transition:opacity .25s var(--ease-out),transform .55s var(--ease-expo)}
+.viewer .doc.swap img{opacity:0;transform:translateX(-50%) translateY(24px) rotate(1.5deg)}
+@media (prefers-reduced-motion:reduce){
+  .ticker .track{animation:none}
+  .anim [data-a],.w>i,.ind,.hdr,.mag,.eb .cv img{transition:none}
+  .anim [data-a]:not(.is-in),.anim h2:not(.is-in) .w>i{opacity:1;transform:none;clip-path:none;filter:none}
+  [data-par]{transform:none!important}
+  .progress{display:none}
+}
+
+/* ===== GUIA + DETALHES ===== */
+.viewer .doc{height:min(36vh,340px)}
+.viewer .doc img{top:22px;width:min(70%,380px)}
+.viewer .doc .ph{display:none;position:absolute;inset:0;align-items:center;justify-content:center;flex-direction:column;gap:10px;text-align:center;padding:24px;color:var(--ink-2);font-size:.95rem}
+.viewer .doc .ph b{font-family:var(--display);font-weight:600;font-stretch:90%;font-size:1.6rem;color:var(--forest);letter-spacing:-.02em}
+.viewer .doc.empty{cursor:default}
+.viewer .doc.empty img,.viewer .doc.empty .zoom{display:none}
+.viewer .doc.empty .ph{display:flex}
+.viewer .body{padding:22px 28px 26px}
+.badge[hidden]{display:none}
+.mrow{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px}
+.badge{display:inline-flex;align-items:center;min-height:24px;padding:0 10px;border-radius:999px;background:#e5efd2;color:var(--lime-ink);font-size:.74rem;font-weight:700;letter-spacing:.01em}
+.qq{font-family:var(--display);font-weight:500;font-stretch:94%;font-size:1.18rem;line-height:1.3;letter-spacing:-.01em;color:var(--teal);margin:2px 0 10px}
+.det{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:16px;padding-top:16px;border-top:1px solid var(--line)}
+.det h4{margin:0 0 8px;font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.det ul{margin:0;padding:0;list-style:none}
+.det li{position:relative;padding-left:16px;font-size:.92rem;line-height:1.45;color:var(--ink-2);margin-bottom:6px}
+.det li::before{content:"";position:absolute;left:0;top:.6em;width:6px;height:6px;border-radius:50%;background:var(--lime)}
+.det p{font-size:.92rem;line-height:1.5;color:var(--ink-2)}
+.det .pz{display:inline-flex;gap:6px;align-items:center;margin-top:10px;font-size:.84rem;font-weight:600;color:var(--forest)}
+.det .pz .ic{width:15px;height:15px}
+.dlg .sc .det{max-width:760px;margin:0 auto 20px;background:var(--white);border-radius:14px;padding:18px 20px;border-top:0}
+.dlg .sc .qq{max-width:760px;margin:0 auto 8px}
+.dlg .sc img.none{display:none}
+
+.guia{background:var(--white)}
+.gwrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,4vw,56px);align-items:start}
+.objs{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.obj{all:unset;box-sizing:border-box;display:grid;grid-template-columns:40px 1fr auto;align-items:center;gap:14px;padding:16px 4px 16px 0;border-bottom:1px solid var(--line);cursor:pointer}
+.obj .oi{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--paper);color:var(--forest);transition:background-color .2s ease,color .2s ease}
+.obj .oi .ic{width:19px;height:19px}
+.obj .ot{font-family:var(--display);font-weight:550;font-stretch:94%;font-size:1.18rem;line-height:1.2;letter-spacing:-.012em;transition:color .2s ease}
+.obj .oa{opacity:0;color:var(--orange-ink);transition:opacity .2s ease,transform .25s var(--ease-out);transform:translateX(-4px)}
+@media (hover:hover) and (pointer:fine){.obj:hover .ot{color:var(--forest-3)}.obj:hover .oa{opacity:1;transform:none}}
+.obj[aria-selected="true"] .oi{background:var(--forest);color:#fff}
+.obj[aria-selected="true"] .ot{color:var(--forest)}
+.obj[aria-selected="true"] .oa{opacity:1;transform:none}
+.obj:focus-visible{outline:2px solid var(--orange);outline-offset:-2px;border-radius:8px}
+.rec{position:sticky;top:100px;background:var(--forest);color:var(--on-dark);border-radius:22px;padding:clamp(26px,3vw,40px);box-shadow:var(--shadow-lg)}
+.rec h3{color:#fff;font-size:clamp(1.6rem,2.4vw,2.1rem)}
+.rec .rx{margin-top:14px;color:var(--on-dark-2);font-size:1rem;line-height:1.55;max-width:58ch}
+.rec .rl{margin:24px 0 10px;font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--lime);font-weight:700}
+.rchips{display:flex;flex-wrap:wrap;gap:8px}
+.rchip{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:0 14px;border-radius:999px;background:rgba(255,255,255,.08);box-shadow:inset 0 0 0 1px rgba(255,255,255,.2);color:#fff;font-weight:600;font-size:.92rem;transition:background-color .18s ease}
+.rchip .ic{width:15px;height:15px;color:var(--lime)}
+.rchip:hover{background:rgba(255,255,255,.16)}
+.rchip:focus-visible{outline:2px solid var(--orange);outline-offset:2px}
+.rec .tip{margin-top:22px;padding-top:18px;border-top:1px solid var(--line-dark);font-size:.92rem;color:var(--on-dark-2);line-height:1.5}
+.rec .tip b{color:#fff}
+.rec .ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.rec.swap>*{opacity:0;transform:translateY(6px)}
+.rec>*{transition:opacity .22s var(--ease-out),transform .3s var(--ease-out)}
+
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(16px,2vw,28px);margin-top:clamp(56px,7vw,96px);padding-top:clamp(32px,4vw,48px);border-top:1px solid var(--line)}
+.steps h3{grid-column:1/-1;font-size:clamp(1.5rem,2.4vw,2.1rem);margin-bottom:6px}
+.step .n{font-family:var(--display);font-weight:600;font-size:1rem;color:var(--orange-ink);font-variant-numeric:tabular-nums}
+.step b{display:block;font-family:var(--display);font-weight:600;font-stretch:94%;font-size:1.25rem;letter-spacing:-.012em;margin:6px 0 8px;line-height:1.2}
+.step p{font-size:.95rem;color:var(--ink-2);line-height:1.5}
+.step a{font-weight:600}
+@media (max-width:980px){.gwrap{grid-template-columns:1fr}.rec{position:static}.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:700px){.det{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.obj .ot{font-size:1.08rem}}
+@media (prefers-reduced-motion:reduce){.rec>*,.obj .oi,.obj .ot,.obj .oa{transition:none}}
+
+/* ===== FAIXA COMERCIAL (v4) ===== */
+.band{position:relative;overflow:hidden;background:var(--forest-2);padding:clamp(96px,12vw,170px) 0;isolation:isolate}
+.band .bt{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:clamp(32px,5vw,80px);align-items:end}
+.band h2{font-size:clamp(2.6rem,5.4vw,4.8rem);max-width:13ch}
+.band .lede{color:var(--on-dark-2)}
+.band .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.bandmark{position:absolute;z-index:-1;right:-5vw;top:8%;width:min(42vw,600px);fill:#fff;opacity:.05;pointer-events:none}
+.vgrid{list-style:none;margin:clamp(64px,8vw,112px) 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(20px,3vw,44px)}
+.vgrid li{position:relative;padding-top:24px}
+.vgrid li::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:rgba(214,234,226,.16)}
+.vgrid li::after{content:"";position:absolute;left:0;top:-1px;height:3px;width:64px;border-radius:2px;background:var(--lime);transform-origin:0 50%;transition:transform 1s var(--ease-expo);transition-delay:calc(var(--d,0s) + .25s)}
+.anim .vgrid li:not(.is-in)::after{transform:scaleX(0)}
+.vgrid b{display:block;font-family:var(--display);font-weight:600;font-stretch:92%;font-size:1.4rem;letter-spacing:-.015em;line-height:1.15;color:#fff;margin-bottom:10px}
+.vgrid span{display:block;color:var(--on-dark-2);font-size:.96rem;line-height:1.5}
+@media (max-width:980px){.band .bt{grid-template-columns:1fr;align-items:start}.vgrid{grid-template-columns:1fr 1fr}.bandmark{width:70vw;top:2%;opacity:.04}}
+@media (max-width:700px){.vgrid{grid-template-columns:1fr}}
+
+/* passos com trilha */
+.step{position:relative;padding-top:26px}
+.step::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:var(--line)}
+.step::after{content:"";position:absolute;left:0;right:0;top:-1px;height:3px;border-radius:2px;background:var(--orange);transform-origin:0 50%;transition:transform 1.1s var(--ease-io);transition-delay:calc(var(--d,0s) + .2s)}
+.anim .step:not(.is-in)::after{transform:scaleX(0)}
+
+/* hero vivo */
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.07) translate3d(-1%,-1%,0)}}
+.ready .hero .bg img{animation:kb 28s ease-in-out 2.4s infinite alternate}
+.anim .ticker .track{animation:none}
+@media (prefers-reduced-motion:reduce){.ready .hero .bg img{animation:none}.vgrid li::after,.step::after{transition:none;transform:none}}
+
+/* protocolos foliares */
+.protos{margin-top:40px;padding-top:26px;border-top:1px solid var(--line)}
+.protos .pl{font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:var(--lime-ink)}
+.protos .px{margin-top:8px;font-size:.95rem;color:var(--ink-2);max-width:52ch}
+.pchips{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 18px}
+.pchip{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:0 14px;border-radius:999px;background:var(--white);box-shadow:inset 0 0 0 1px var(--line);color:var(--ink);text-decoration:none;font-weight:600;font-size:.92rem;transition:background-color .18s ease,box-shadow .18s ease,transform .2s var(--ease-out)}
+.pchip .ic{width:16px;height:16px;color:var(--orange-ink)}
+@media (hover:hover) and (pointer:fine){.pchip:hover{background:#fff;box-shadow:inset 0 0 0 1px var(--forest-3);transform:translateY(-2px)}}
+.pchip:active{transform:scale(.97)}
+@media (prefers-reduced-motion:reduce){.pchip{transition:none}}
+.solo.sec{padding-top:clamp(32px,4vw,64px)}
+
+/* menu alinhado (v5) */
+.hdr .in{gap:clamp(16px,2vw,32px)}
+.hdr nav{align-items:center;gap:clamp(14px,1.6vw,28px);margin-left:auto;flex-wrap:nowrap}
+.hdr nav a{display:inline-flex;align-items:center;height:40px;white-space:nowrap;line-height:1;position:relative}
+.hdr nav a::after{content:"";position:absolute;left:0;right:0;bottom:6px;height:1.5px;background:currentColor;transform:scaleX(0);transform-origin:0 50%;transition:transform .25s var(--ease-out)}
+@media (hover:hover) and (pointer:fine){.hdr nav a:hover::after{transform:scaleX(1)}}
+.hdr .acts .btn{white-space:nowrap}
+@media (max-width:1280px){.hdr .acts .btn-ghost{width:40px;padding:0;justify-content:center;gap:0;font-size:0}.hdr .acts .btn-ghost .ic{width:18px;height:18px}}
+@media (max-width:1120px){
+  .hdr nav,.hdr .acts .btn-ghost{display:none}
+  .hdr .acts{margin-left:auto}
+  .menu-btn{display:inline-flex;margin-left:0}
+}
+@media (prefers-reduced-motion:reduce){.hdr nav a::after{transition:none}}
+
+/* MAPA (v8) */
+.mapa{background:var(--forest);padding:clamp(48px,6vw,80px) 0}
+.mapa .mgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:clamp(32px,5vw,80px);align-items:center}
+.mapa .meb{margin:0 0 14px;font-size:.78rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--lime)}
+.mapa h2{max-width:22ch}
+.mapa + .sobre{padding-top:clamp(56px,7vw,104px)!important}
+.mcta{margin-top:30px;min-height:68px;padding:0 30px 0 24px;gap:14px;font-size:1.1rem;font-weight:700;box-shadow:0 14px 30px -12px rgba(229,137,26,.7)}
+.mcta .ic{width:24px;height:24px}
+.mcta span{display:flex;flex-direction:column;line-height:1.15}
+.mcta small{font-size:.78rem;font-weight:600;opacity:.75;margin-top:3px}
+@media (hover:hover) and (pointer:fine){.mcta:hover{--bg:#f09a2c;transform:translateY(-2px)}}
+.mdoc{position:relative;display:block;border-radius:16px;overflow:hidden;box-shadow:0 30px 60px -25px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.08);transform:rotate(1.2deg);transition:transform .35s var(--ease-out)}
+.mdoc img{display:block;width:100%;height:auto}
+.mtag{position:absolute;right:14px;bottom:14px;display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border-radius:999px;background:var(--orange);color:#1d1203;font-size:.85rem;font-weight:700}
+.mtag .ic{width:16px;height:16px}
+@media (hover:hover) and (pointer:fine){.mdoc:hover{transform:rotate(0) translateY(-4px)}}
+@media (max-width:900px){.mapa .mgrid{grid-template-columns:1fr}.mdoc{order:-1;transform:none}.mcta{width:100%;justify-content:center}}
+
+/* vídeos do laudo (v9) */
+.docw{position:relative}
+.vpill{position:absolute;left:16px;bottom:16px;z-index:3;display:inline-flex;align-items:center;gap:9px;padding:6px 14px 6px 6px;border:0;border-radius:999px;background:var(--orange);color:#1d1203;font:inherit;font-size:.82rem;font-weight:700;cursor:pointer;box-shadow:0 6px 16px -6px rgba(0,0,0,.35);transition:transform .15s var(--ease-out)}
+.vpill[hidden]{display:none}
+.vpill .pl{position:relative;width:24px;height:24px;border-radius:50%;background:#fff}
+.vpill .pl::after{content:"";position:absolute;left:9px;top:6px;border-left:9px solid var(--orange);border-top:6px solid transparent;border-bottom:6px solid transparent}
+@media (hover:hover) and (pointer:fine){.vpill:hover{transform:translateY(-1px)}}
+.vpill:active{transform:scale(.97)}
+#vDet .vids{display:none}
+
+.det .vids{grid-column:1/-1;margin-top:6px;padding-top:16px;border-top:1px solid var(--line)}
+#vDet .vids{display:none}
+.vslot,.vback{display:none}
+.docw.vmode .doc,.docw.vmode .vpill{display:none}
+.docw.vmode .vslot{display:block;background:#071c19;padding:12px}
+.docw.vmode .vback{display:inline-flex;position:absolute;right:14px;top:14px;z-index:4;padding:7px 13px;border:0;border-radius:999px;background:rgba(255,255,255,.14);color:#fff;font:inherit;font-size:.8rem;font-weight:600;cursor:pointer}
+.vbox{display:grid;gap:10px}
+.vfr{position:relative;aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:#000}
+.vfr iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vstart{position:absolute;inset:0;width:100%;border:0;padding:0;background:#0d3732;cursor:pointer;color:#fff;font:inherit}
+.vstart img{width:100%;height:100%;object-fit:cover;display:block;opacity:.75}
+.vstart .pl{position:absolute;left:50%;top:50%;width:58px;height:58px;margin:-29px 0 0 -29px;border-radius:50%;background:var(--orange);box-shadow:0 8px 20px rgba(0,0,0,.35)}
+.vstart .pl::after{content:"";position:absolute;left:23px;top:18px;border-left:17px solid #fff;border-top:11px solid transparent;border-bottom:11px solid transparent}
+.vstart .cap{position:absolute;left:14px;bottom:12px;text-align:left;font-weight:700;font-size:.95rem;text-shadow:0 1px 6px rgba(0,0,0,.6)}
+.vstart .cap small{display:block;font-size:.7rem;color:var(--lime);letter-spacing:.08em}
+.vch{list-style:none;margin:0;padding:0 0 4px;display:flex;gap:6px;overflow-x:auto;scrollbar-width:thin}
+.vch li{margin:0;padding:0}.vch li::before{display:none}
+.vch button{flex:none;display:block;padding:7px 11px;border:1px solid rgba(255,255,255,.16);border-radius:10px;background:transparent;color:#dfe9e6;font:inherit;font-size:.8rem;line-height:1.25;text-align:left;cursor:pointer;white-space:nowrap}
+.vch button small{display:block;font-size:.66rem;font-weight:700;color:var(--orange);letter-spacing:.06em}
+.vch button.on{background:#fff;color:#0d3732;border-color:#fff}
+.det .vbox .vch button{border-color:var(--line);color:var(--ink-2)}
+.det .vbox .vch button.on{background:var(--forest);color:#fff;border-color:var(--forest)}
+@media (hover:hover) and (pointer:fine){.vch button:not(.on):hover{background:rgba(255,255,255,.08)}.det .vbox .vch button:not(.on):hover{background:var(--paper-2)}}
+</style>
 </head>
 <body>
+<div class="progress" id="prog" aria-hidden="true"></div>
+<a class="sr" href="#analises">Pular para as análises</a>
 
-
-<header class=" home ">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-8 col-xs-12 col-cont" style="padding-right: 0;">
-                <div class="row">
-                    <div class="col-md-12 col-xs-12" style="padding-right: 0;">
-                        <a id="logo" href="/" class="wow fadeInLeft"><img src="/img/site/logo.png" alt=""></a>
-                        <div class="btn-group">
-                            <div class="dropdown">
-                                <a class="btn btn-default wow fadeInDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="/produtos/" title="Produtos">Produtos</a>
-                                <div class="dropdown-menu dropmenu-produto" aria-labelledby="dropdownProdutoButton">
-                                    <a class="dropdown-item" href="/produtos/"> Solo e Folha</a>
-                                    <a class="dropdown-item" href="/bioanalise-plano/"> Bioanálise/BioAS</a>
-                                    <a class="dropdown-item" href="/produtos/#outras-analises"> Outras análises</a>
-                                </div>
-                            </div>
-                            <a class="btn btn-default wow fadeInDown" href="/manifesto/" title="Manifesto">Manifesto</a>
-                        </div>
-                        <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
-                            <i class="far fa-bars"></i>
-                            <i class="far fa-times"></i>
-                        </button>
-
-                    </div>
-                    <div class="col-md-12 col-xs-12 col-banner-home">
-                        <div class="faixa-titulo-sub is-desktop">
-                            <div class="bg"></div>
-                            <div class="titulo"><h1></h1></div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-12 col-xs-12">
-                            <div class="banner-home">
-        <h2 class="wow slideInLeft"><strong>Nova bioanálise</strong> <br>
-            <strong>com a inédita e exclusiva</strong> <br>
-            Tecnologia BioAS Embrapa</h2>
-        <a target="_self" href="/bioanalise/" class="btn btn-success wow slideInRight" title="SAIBA MAIS SOBRE NOSSA NOVA POLÍTICA COMERCIAL">ACESSE E SAIBA MAIS</a>
-        <br>
-        <img src="/img/site/logo-embrapa.jpg" class="img-fluid" style="max-width: 150px; margin-top: 20px">
+<header class="hdr" id="hdr">
+  <div class="wrap in">
+    <a class="logo" href="#topo" aria-label="Laborsolo — início">
+      <img class="l-light" src="assets/img/logo_white.png" alt="Laborsolo" width="160" height="60">
+      <img class="l-dark" src="assets/img/logo.png" alt="" width="160" height="60">
+    </a>
+    <nav aria-label="Principal">
+      <a href="#analises">Análises</a>
+      <a href="#guia">Qual análise?</a>
+      <a href="#qualidade">Qualidade</a>
+      <a href="#digital">Resultados</a>
+      <a href="#ebooks">E-books</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="acts">
+      <a class="btn btn-ghost btn-sm" href="https://novoportal.laborsolo.com.br/" target="_blank" rel="noopener" aria-label="Portal do cliente" title="Portal do cliente"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="m10 17 5-5-5-5" /><path d="M15 12H3" /><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" /></svg>Portal do cliente</a>
+      <a class="btn btn-sm" data-wa="Olá! Vim pelo site da Laborsolo e quero falar com a equipe comercial." href="#">Falar com o comercial</a>
     </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-md-4 col-xs-12" style="padding-left: 0; padding-right: 0;">
-                <div class="bg-topo">
-
-
-
-
-
-
-
-
-
-
-
-
-                        <a class="btn btn-warning" target="_blank" href="http://novoportal.laborsolo.com.br/" title="Acesso a resultados">Acesso a resultados</a>
-
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-
-    <div class="faixa-titulo-sub is-mobile">
-        <div class="titulo"><h1></h1></div>
-    </div>
-
-    <div class="collapse navbar-collapse offcanvas-collapse" id="heraderMenu">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="/" title="">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="/produtos/" title="Produtos">Produtos</a>
-                <div class="dropdown-menu dropmenu-produto" aria-labelledby="dropdownProdutoButton">
-                    <a class="dropdown-item" href="/produtos/"> Solo e Folha</a>
-                    <a class="dropdown-item" href="/bioanalise-plano/"> Bioanálise</a>
-                    <a class="dropdown-item" href="/produtos/#outras-analises"> Outras análises</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/manifesto/" title="Produtos">Manifesto</a>
-            </li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <li class="nav-item">
-                <a class="btn btn-warning" target="_blank" href="http://novoportal.laborsolo.com.br/" title="Acesso a resultados">Acesso a resultados</a>
-            </li>
-        </ul>
-    </div>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="sheet"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M4 5h16" /><path d="M4 12h16" /><path d="M4 19h16" /></svg></button>
+  </div>
 </header>
 
-    <main class="home">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <section class="bloco-produtos">
-            <div class="container">
-                <div class="row justify-content-center">
-
-                    <div class="col-md-4 col-sm-12 col-xs-12 mb-4">
-                        <div class="card first">
-                            <div class="card-body">
-                                <h3 class="card-title wow slideInLeft">
-                                    Conheça <br>
-                                    <strong>os produtos</strong> <br>
-                                    Laborsolo
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                                                                <div class="col-md-4 col-sm-12 col-xs-6 mb-4">
-                        <div class="card -bg-dark text-white wow zoomInUp" id="homeproduto-1">
-                            <div class="card-img"><div class="img-bg" style="background-image: url(/image/homecaixa/prod_1582896083.png); height: 390px;"></div></div>
-                            <div class="card-img-overlay">
-                                <h3 class="card-title">Análise de solo </h3>
-                                <p class="card-text"></p>
-                                <a href="/produtos/" target="_self" class="btn btn-sm btn-warning">ver detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                                                                <div class="col-md-4 col-sm-12 col-xs-6 mb-4">
-                        <div class="card -bg-dark text-white wow zoomInUp" id="homeproduto-2">
-                            <div class="card-img"><div class="img-bg" style="background-image: url(/image/homecaixa/fundo-index-analisefoliar_1583006448.png); height: 390px;"></div></div>
-                            <div class="card-img-overlay">
-                                <h3 class="card-title">Análise de tecido vegetal </h3>
-                                <p class="card-text"></p>
-                                <a href="/produtos/" target="_self" class="btn btn-sm btn-warning">ver detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                                                                <div class="col-md-4 col-sm-12 col-xs-6 mb-4">
-                        <div class="card -bg-dark text-white wow zoomInUp" id="homeproduto-3">
-                            <div class="card-img"><div class="img-bg" style="background-image: url(/image/homecaixa/fundo-index-outras_1583006485.png); height: 390px;"></div></div>
-                            <div class="card-img-overlay">
-                                <h3 class="card-title">Outras matrizes </h3>
-                                <p class="card-text"></p>
-                                <a href="/produtos/#outras-analises" target="_self" class="btn btn-sm btn-warning">ver detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                                                                <div class="col-md-4 col-sm-12 col-xs-6 mb-4">
-                        <div class="card -bg-dark text-white wow zoomInUp" id="homeproduto-4">
-                            <div class="card-img"><div class="img-bg" style="background-image: url(/image/homecaixa/fundo-index-fertilizantes_1583006513.png); height: 390px;"></div></div>
-                            <div class="card-img-overlay">
-                                <h3 class="card-title">Análise de fertilizantes </h3>
-                                <p class="card-text"></p>
-                                <a href="/produtos/#outras-analises" target="_self" class="btn btn-sm btn-warning">ver detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                                                                <div class="col-md-4 col-sm-12 col-xs-6 mb-4">
-                        <div class="card -bg-dark text-white wow zoomInUp" id="homeproduto-5">
-                            <div class="card-img"><div class="img-bg" style="background-image: url(/image/homecaixa/fundo-index-corretivo_1583006546.png); height: 390px;"></div></div>
-                            <div class="card-img-overlay">
-                                <h3 class="card-title">Análise de corretivos </h3>
-                                <p class="card-text"></p>
-                                <a href="/produtos/#outras-analises" target="_self" class="btn btn-sm btn-warning">ver detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-
-        <section class="faixa-planos">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-8 col-xs-12 col-img mb-xs-4">
-                        <h2>Créditos Antecipados Laborsolo </h2>
-                        <p>Compre créditos de forma antecipada e tenha benefícios.</p>
-
-                    </div>
-                    <div class="col-md-3 col-xs-12 text-left">
-                        <img src="/img/site/icon-plano.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <section class="integracao">
-            <div class="container text-center">
-                <h2>Nossas integrações</h2>
-
-                <div id="bannerIntegracao" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#bannerIntegracao" data-slide-to="0" class=" active "></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="row justify-content-center">
-                                <div class="col-md-3 col-xs-12 wow fadeInDown">
-                                    <a href="https://home.agrian.com/pt-br/" target="_blank">
-                                    <div class="img-bg" style="background-image: url(/img/site/logo-integracao1.png); height: 70px;">
-                                        <img src="/img/site/logo-integracao1.png" class="">
-                                    </div>
-                                    </a>
-                                </div>
-                                <div class="col-md-3 col-xs-12 wow fadeInDown">
-                                    <a href="https://inceres.com.br/" target="_blank">
-                                    <div class="img-bg" style="background-image: url(/img/site/logo-integracao2.png); height: 70px;">
-                                        <img src="/img/site/logo-integracao2.png" class="">
-                                    </div>
-                                    </a>
-                                </div>
-                                <div class="col-md-3 col-xs-12 wow fadeInDown">
-                                    <a href="https://nutrienagsolutions.com.br/" target="_blank">
-                                    <div class="img-bg" style="background-image: url(/img/site/logo-integracao3.png); height: 70px;">
-                                        <img src="/img/site/logo-integracao3.png" class="">
-                                    </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="newsletter">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-2 col-xs-12 col-img mb-xs-4">
-                        <img src="/img/site/icon-news.png" class="img-fluid">
-                    </div>
-                    <div class="col-md-6 col-xs-12 text-left">
-                        <h2>Assine nossa newsletter para receber em <br> primeira mão nossos conteúdos e novidades.</h2>
-                    </div>
-                    <div class="col-md-4 col-xs-12 text-right">
-                        <form action="/newsletter" method="post" id="form-newsletter">
-                            <input type="hidden" name="_token" value="uX0RaGjsoDm0TYs75R4ufTZIC8FCPxOZk4J4V1ab">
-                            <div class="input-group mb-3">
-                                <input type="email" name="email" class="form-control" required placeholder="informe o seu email?" aria-describedby="button-addon2">
-                                <div class="input-group-append">
-                                    <button class="g-recaptcha btn btn-outline-secondary"
-                                            data-sitekey="6LcKsYcgAAAAAHV_CYiUHgNjTwtk_6Y3z_z6VH_G"
-                                            data-callback='onSubmit'
-                                            data-action='/submit'><i class="fas fa-paper-plane"></i></button>
-
-
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-
-        <section class="academy">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-xs-12">
-                        <div class="img-bg wow slideInLeft" style="background-image: url(/img/site/academy.png); width: 750px; height: 546px;">
-                            <img src="/img/site/academy.png" class="">
-                        </div>
-
-                        <div class="card wow slideInRight">
-                            <div class="card-header text-right">
-                                <img src="/img/site/logo-academy.png" alt="">
-                            </div>
-                            <div class="card-body">
-                                <h3>O que a laborsolo academy <br> Pode fazer por vocÊ!</h3>
-                                <p>
-                                    Conheça nosso portal e se cadastre para receber notícias, cases, conteúdos técnicos exclusivos e participar de nossos cursos.
-                                </p>
-                            </div>
-                            <div class="card-footer text-right">
-                                <a href="https://www.laborsoloacademy.com.br/" target="_blank" class="btn btn-success">Conheça nosso PORTAL</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-<section class="a2p">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2 col-xs-12 col-img mb-xs-4">
-                <img src="/img/site/a2p.png" alt="">
-            </div>
-            <div class="col-md-7 col-xs-12 text-left">
-                <h2>Quer uma consultoria especializada <br> em fertilidade e nutrição? </h2>
-            </div>
-            <div class="col-md-3 col-xs-12 text-right">
-                <a href="https://a2p.laborsolo.com.br/" target="_blank" class="btn btn-warning btn-block btn-lg">Conheça a A2P</a>
-            </div>
-        </div>
+<div class="sheet dark" id="sheet" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="row"><img src="assets/img/logo_white.png" alt="Laborsolo"><button class="x" id="sheetX" aria-label="Fechar menu"><svg class="ic" aria-hidden="true" fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg></button></div>
+  <nav aria-label="Menu móvel">
+    <a href="#analises">Análises</a>
+    <a href="#guia">Qual análise?</a>
+    <a href="#qualidade">Qualidade</a>
+    <a href="#digital">Resultados</a>
+    <a href="#ebooks">E-books</a>
+    <a href="#contato">Contato</a>
+  </nav>
+  <div class="acts">
+    <div style="display:flex;gap:22px;margin-bottom:8px"><a class="link" href="https://www.instagram.com/laborsolo/" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>Instagram</a><a class="link" href="https://www.linkedin.com/company/28260329/" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>LinkedIn</a><a class="link" href="https://www.youtube.com/channel/UCaQEMbI68vnofacxhI-Yvkw" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>YouTube</a></div>
+    <a class="btn btn-wa" data-wa="Olá! Vim pelo site da Laborsolo e quero falar com a equipe comercial." href="#"><svg class="ic" aria-hidden="true" fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>Falar com o comercial</a>
+    <a class="btn btn-ghost" href="https://novoportal.laborsolo.com.br/" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="m10 17 5-5-5-5" /><path d="M15 12H3" /><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" /></svg>Portal do cliente</a>
+  </div>
+</div>
+
+<main id="topo">
+<section class="hero on-photo" aria-labelledby="h-hero">
+  <div class="bg"><img src="assets/img/hero.jpg" alt="" fetchpriority="high"></div>
+  <div class="wrap in">
+    <h1 id="h-hero"><span class="ln"><span>Transformar</span></span><span class="ln"><span>análises em</span></span><span class="ln"><span><em>decisões.</em></span></span></h1>
+    <p class="lede rv">Solo, planta, insumos, água e nutrição animal em um só laboratório, com acreditação ISO/IEC 17025 em solo e tecido vegetal, registro no MAPA para fertilizantes e corretivos e mais de três décadas dedicadas à análise agronômica.</p>
+    <div class="ctas rv d2">
+      <a class="btn btn-wa" data-wa="Olá! Vim pelo site da Laborsolo e quero um orçamento de análises." href="#"><svg class="ic" aria-hidden="true" fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>Solicitar orçamento</a>
+      <a class="btn btn-ghost" href="#analises">Ver as análises<svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></a>
+    </div>
     </div>
 </section>
-    </main>
 
-<footer>
-    <div class="container">
-        <div class="row">
-
-            <div class="col-md-3 col-xs-12">
-                <a href="/" title=" {&quot;br&quot;:&quot;Laborsolo&quot;}">
-                    <img class="logo" src="/img/site/logo.png" alt=" {&quot;br&quot;:&quot;Laborsolo&quot;}">
-                </a>
-
-                <p class="mt-4">
-                    43 3338-5738
-                    <br>
-                    43 99114-4418
-                    <br>
-                    laborsolo@laborsolo.com.br
-                </p>
-                <p>
-                    Av. Tiradentes, 1770<br />
-86071-000<br />
-Londrina - PR - Brasil
-                </p>
-            </div>
-            <div class="col-md-3 col-xs-12">
-                <h3>Produtos</h3>
-                <ul>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/produtos/" title="">Análise de Solo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/produtos/" title="">Análise de Tecido Vegetal</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/produtos/#outras-analises" title="">Análise de Corretivos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/produtos/#outras-analises" title="">Análise de Fertilizantes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/produtos/#outras-analises" title="">Outras matrizes</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-3 col-xs-12">
-                <h3>Laborsolo</h3>
-                <ul>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/manifesto/">Sobre nós</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.laborsoloacademy.com.br/" target="_blank">Laborsolo Academy</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/labor-news/" title="">Labornews</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/manuais/" title="">Manuais</a>
-                    </li>
-
-
-
-
-
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://a2p.laborsolo.com.br/" target="_blank" title="">A2P</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://iqs.laborsolo.com.br/" target="_blank" title="">IQS </a>
-                    </li>
-                </ul>
-            </div>
-
-
-
-
-
-
-
-
-
-
-            <div class="col-md-3 col-xs-12 rede-social">
-                <h3>Redes Sociais</h3>
-                                    <a href="https://www.facebook.com/laborsolo/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="13.503" height="13.502" viewBox="0 0 13.503 13.502">
-                            <g id="Grupo_92" data-name="Grupo 92" transform="translate(0 0)">
-                                <path id="Caminho_12" data-name="Caminho 12" d="M214.469,29.43H204.384a1.71,1.71,0,0,0-1.709,1.708V41.224a1.71,1.71,0,0,0,1.709,1.708h10.085a1.71,1.71,0,0,0,1.708-1.708V31.138A1.71,1.71,0,0,0,214.469,29.43Zm.35,11.794a.35.35,0,0,1-.35.35h-3.424V37.579h1.629l.269-1.635h-1.9V34.81a.778.778,0,0,1,.791-.791h1.081V32.383h-1.081a2.426,2.426,0,0,0-2.425,2.431v1.129h-1.583v1.635h1.583v3.995h-5.027a.35.35,0,0,1-.35-.35V31.138a.35.35,0,0,1,.35-.35h10.085a.35.35,0,0,1,.35.35Z" transform="translate(-202.675 -29.43)" fill="#091046"/>
-                            </g>
-                        </svg>Facebook</a>
-                                                                    <a href="https://www.instagram.com/laborsolo/" target="_blank"><svg id="Grupo_89" data-name="Grupo 89" xmlns="http://www.w3.org/2000/svg" width="13.502" height="13.502" viewBox="0 0 13.502 13.502">
-                            <g id="Grupo_81" data-name="Grupo 81" transform="translate(0 0)">
-                                <path id="Caminho_17" data-name="Caminho 17" d="M296.494,34.175a3.706,3.706,0,1,0,3.706,3.706A3.71,3.71,0,0,0,296.494,34.175Zm0,6.091a2.385,2.385,0,1,1,2.385-2.385A2.388,2.388,0,0,1,296.494,40.266Z" transform="translate(-289.743 -31.13)" fill="#091046"/>
-                                <ellipse id="Elipse_1" data-name="Elipse 1" cx="0.661" cy="0.661" rx="0.661" ry="0.661" transform="translate(9.704 2.477)" fill="#091046"/>
-                                <path id="Caminho_16" data-name="Caminho 16" d="M297.562,29.43h-5.537a3.987,3.987,0,0,0-3.983,3.982v5.537a3.987,3.987,0,0,0,3.983,3.983h5.537a3.987,3.987,0,0,0,3.983-3.983V33.412A3.986,3.986,0,0,0,297.562,29.43Zm2.662,3.982v5.537a2.665,2.665,0,0,1-2.662,2.662h-5.537a2.665,2.665,0,0,1-2.662-2.662V33.412a2.665,2.665,0,0,1,2.662-2.661h5.537A2.664,2.664,0,0,1,300.224,33.412Z" transform="translate(-288.043 -29.43)" fill="#091046"/>
-                            </g>
-                        </svg>
-                        Instagram</a>
-                                
-                <div class="links-app">
-                    <a href="https://apps.apple.com/br/app/laborsolo-connect/id1213067944"><img src="/img/site/app-store.png" alt=""></a>
-                    <a href="https://play.google.com/store/apps/details?id=com.laborsolo.laborsoloconnect"><img src="/img/site/google-play.png" alt=""></a>
-                </div>
-            </div>
-
-        </div>
-        <div class="row dev">
-            <div class="col-md-12 col-xs-12">
-            </div>
-        </div>
+<section class="guia sec" id="guia" aria-labelledby="h-guia">
+  <div class="wrap">
+    <div class="head">
+      <h2 id="h-guia">Qual análise <em>eu preciso?</em></h2>
+      <p class="lede">Comece pela pergunta que você quer responder. A fertilidade do solo tem três pilares (químico, físico e biológico) e cada situação pede uma combinação diferente.</p>
     </div>
+    <div class="gwrap">
+      <div class="objs" role="tablist" aria-label="Objetivos" id="objs"></div>
+      <div class="rec" id="rec" role="tabpanel" aria-live="polite">
+        <h3 id="rT"></h3>
+        <p class="rx" id="rX"></p>
+        <p class="rl">Análises indicadas</p>
+        <div class="rchips" id="rC"></div>
+        <p class="tip" id="rTip"></p>
+        <div class="ctas"><a class="btn btn-wa" id="rWa" data-wa="" href="#"><svg class="ic" aria-hidden="true" fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>Montar meu pedido</a></div>
+      </div>
+    </div>
+    <div class="steps" id="como">
+      <h3>Do pedido ao laudo</h3>
+      <div class="step"><span class="n">01</span><b>Defina com a equipe</b><p>Conte o objetivo e a área. A equipe Laborsolo indica o conjunto certo de análises e o protocolo de coleta.</p></div>
+      <div class="step"><span class="n">02</span><b>Colete do jeito certo</b><p>Cada análise tem profundidade, quantidade e conservação próprias. O laboratório analisa o que recebe: a coleta define o resultado.</p></div>
+      <div class="step"><span class="n">03</span><b>Envie as amostras</b><p>Pelos Correios, por transportadora ou entregue na sede: Av. Tiradentes, 1770, Londrina/PR.</p></div>
+      <div class="step"><span class="n">04</span><b>Receba e interprete</b><p>Laudo no <a href="https://novoportal.laborsolo.com.br/" target="_blank" rel="noopener">portal do cliente</a>, com histórico e exportação para Excel, e suporte de agrônomos para transformar o resultado em decisão.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true"><div class="track"><span>Química de Solo</span><span>Físico-Hídrica</span><span>BioAS</span><span>Respiração 24h</span><span>Glomalina</span><span>Soil Food Web</span><span>Metagenômica</span><span>MOF</span><span>Biomassa Microbiana</span><span>Extrato de Saturação</span><span>Tecido Vegetal</span><span>DRIS</span><span>Fertilizantes</span><span>Corretivos</span><span>Remineralizadores</span><span>Contaminantes</span><span>Substrato</span><span>Água</span><span>Vinhaça</span><span>Bromatológica</span><span>Sal Mineral</span><span>Química de Solo</span><span>Físico-Hídrica</span><span>BioAS</span><span>Respiração 24h</span><span>Glomalina</span><span>Soil Food Web</span><span>Metagenômica</span><span>MOF</span><span>Biomassa Microbiana</span><span>Extrato de Saturação</span><span>Tecido Vegetal</span><span>DRIS</span><span>Fertilizantes</span><span>Corretivos</span><span>Remineralizadores</span><span>Contaminantes</span><span>Substrato</span><span>Água</span><span>Vinhaça</span><span>Bromatológica</span><span>Sal Mineral</span></div></div>
+<section class="analises sec" id="analises" aria-labelledby="h-an">
+  <div class="wrap">
+    <div class="head">
+      <h2 id="h-an">Análises que <em>realizamos.</em></h2>
+      <p class="lede">Para cada análise: a pergunta que ela responde, quando usar, como coletar e o laudo real entregue ao cliente.</p>
+    </div>
+    <div class="filters" role="group" aria-label="Filtrar análises" id="filters"></div>
+    <div class="cat">
+      <div class="list" id="list"></div>
+      <aside class="viewer" id="viewer" aria-live="polite">
+        <div class="docw"><button class="doc" id="vDoc" type="button" aria-label="Ampliar laudo"><img id="vImg" src="assets/img/n_quimica.jpg" alt="Laudo de Química de Solo"><span class="zoom"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><circle cx="11" cy="11" r="8" /><line x1="21" x2="16.65" y1="21" y2="16.65" /><line x1="11" x2="11" y1="8" y2="14" /><line x1="8" x2="14" y1="11" y2="11" /></svg>Ampliar laudo</span><span class="ph"><b id="vPh"></b>Peça um laudo de exemplo à equipe comercial.</span></button><button type="button" class="vpill" id="vVid" data-vids="quimica" hidden><span class="pl"></span><span>Como ler este laudo · <span id="vVidN">7</span> vídeos</span></button><div class="vslot" id="vSlot"></div><button type="button" class="vback" id="vBack">← Voltar ao laudo</button></div>
+        <div class="body">
+          <div class="mrow"><span class="meta" id="vMeta"></span><span class="badge" id="vBadge" hidden></span></div>
+          <h3 id="vTitle"></h3>
+          <p class="qq" id="vQ"></p>
+          <p id="vDesc"></p>
+          <div class="det" id="vDet"></div>
+          <p class="note" id="vNote"></p>
+          <div class="acts" id="vActs"></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="solo sec" id="solo" aria-labelledby="h-solo">
+  <div class="wrap grid">
+    <div class="pics">
+      <img class="p1" src="assets/img/solo_maos.jpg" alt="Solo nas mãos">
+      <img class="p2" src="assets/img/solo_det.jpg" alt="Detalhe da estrutura do solo">
+    </div>
+    <div>
+      <h2 id="h-solo">O solo visto <em>por inteiro.</em></h2>
+      <p class="lede" style="margin-top:22px">Química, física e biologia em leituras complementares. Sair do resultado pontual e chegar a um diagnóstico do sistema produtivo.</p>
+      <ul class="pill-rows">
+        <li><span class="k">Química</span><div><b>Disponibilidade e equilíbrio</b><p>Fertilidade, nutrientes, acidez e as relações que condicionam o desenvolvimento das plantas.</p>
+          <div class="zoom3"><button data-open="quimica">Química de Solo · fertilidade</button><button data-open="extrato">Extrato de Saturação · solução do solo</button></div></div></li>
+        <li><span class="k">Física</span><div><b>Estrutura, água e ar</b><p>Granulometria e físico-hídrica para compreender porosidade, retenção de água e condições ao desenvolvimento radicular.</p>
+          <div class="zoom3"><button data-open="fisica">Físico-Hídrica · água e estrutura</button></div></div></li>
+        <li><span class="k">Biologia</span><div><b>Atividade e comunidade</b><p>Três níveis de leitura da vida do solo, da atividade geral à identificação da comunidade microbiana por DNA.</p>
+          <div class="zoom3"><button data-open="bioas">BioAS · atividade</button><button data-open="sfw">Soil Food Web · função</button><button data-open="meta">Metagenômica · composição</button></div></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="dris sec" id="dris" aria-labelledby="h-dris">
+  <div class="wrap grid">
+    <div>
+      <h2 id="h-dris">O que a planta <em>está dizendo.</em></h2>
+      <p class="lede" style="margin-top:22px">A análise de tecido vegetal mostra o que a planta efetivamente absorveu. Com os bancos DRIS da Laborsolo, o resultado foliar vira uma leitura de equilíbrio e de prioridade nutricional.</p>
+      <ul class="facts">
+        <li><b class="num" data-count="20" data-pre="+" data-suf=" anos">+20 anos</b><span>de calibração e refinamento</span></li>
+        <li><b class="num" data-count="30" data-pre="+" data-suf=" culturas">+30 culturas</b><span>com interpretação por DRIS</span></li>
+      </ul>
+      <div class="ctas">
+        <a class="btn" data-wa="Olá! Vim pelo site da Laborsolo e quero um orçamento de Tecido Vegetal com DRIS." href="#">Orçar Tecido Vegetal com DRIS</a>
+        <a class="btn btn-ghost" href="#ebooks"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M12 5v16" /><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" /></svg>Ler o e-book</a>
+      </div>
+      <div class="protos">
+        <p class="pl">Protocolos de coleta foliar</p>
+        <p class="px">A folha certa, na posição certa: cada cultura tem sua folha índice. Baixe o protocolo antes de ir a campo.</p>
+        <div class="pchips"><a class="pchip" href="https://drive.google.com/file/d/1bHhCGdiYPTKF3iv4IrnyKxOiKBdOS5QP/view" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /><path d="M14 2v5a1 1 0 0 0 1 1h5" /><path d="M10 9H8" /><path d="M16 13H8" /><path d="M16 17H8" /></svg>Soja</a><a class="pchip" href="https://drive.google.com/file/d/1LIEAfeJuIsc7eIEmJOgxpnIOYnlt5wo7/view" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /><path d="M14 2v5a1 1 0 0 0 1 1h5" /><path d="M10 9H8" /><path d="M16 13H8" /><path d="M16 17H8" /></svg>Milho</a><a class="pchip" href="https://drive.google.com/file/d/11zM9C7chRqTlJolmp-tSoUbrXteKKhhF/view" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /><path d="M14 2v5a1 1 0 0 0 1 1h5" /><path d="M10 9H8" /><path d="M16 13H8" /><path d="M16 17H8" /></svg>Feijão</a><a class="pchip" href="https://drive.google.com/file/d/19DWuZqh0mBzOeYxagdSC42T_ECQtxg-P/view" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /><path d="M14 2v5a1 1 0 0 0 1 1h5" /><path d="M10 9H8" /><path d="M16 13H8" /><path d="M16 17H8" /></svg>Algodão</a><a class="pchip" href="https://drive.google.com/file/d/1OHK0Q4d3EvZCwnytavml-zh_lHdbJ2Fb/view" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /><path d="M14 2v5a1 1 0 0 0 1 1h5" /><path d="M10 9H8" /><path d="M16 13H8" /><path d="M16 17H8" /></svg>Trigo</a><a class="pchip" href="https://drive.google.com/file/d/16gNj1dtL9S6OHdSUkFsy_H0i2AUS3-tW/view" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /><path d="M14 2v5a1 1 0 0 0 1 1h5" /><path d="M10 9H8" /><path d="M16 13H8" /><path d="M16 17H8" /></svg>Cana-de-açúcar</a><a class="pchip" href="https://drive.google.com/file/d/1PeGz3NJcjj3Cb95FMDqWnS2Hk1Tv8wkh/view" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /><path d="M14 2v5a1 1 0 0 0 1 1h5" /><path d="M10 9H8" /><path d="M16 13H8" /><path d="M16 17H8" /></svg>Café</a><a class="pchip" href="https://drive.google.com/file/d/1iLL97J6oVIyEP6dzV0j1ZlnhOeiSNRFC/view" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /><path d="M14 2v5a1 1 0 0 0 1 1h5" /><path d="M10 9H8" /><path d="M16 13H8" /><path d="M16 17H8" /></svg>Citros</a></div>
+        <a class="link" href="https://drive.google.com/drive/folders/1U2rUNimsOQOfBWH4rUbcMBHOcwrYtKDT?usp=drive_link" target="_blank" rel="noopener">Ver todos os protocolos<svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+      </div>
+    </div>
+    <button class="paper" data-open="tv-dris" type="button" aria-label="Ampliar laudo DRIS"><img src="assets/img/n_tv.jpg" alt="Laudo de interpretação DRIS da Laborsolo"></button>
+  </div>
+</section>
+
+<section class="proc" aria-labelledby="h-proc">
+  <img src="assets/img/automacao.jpg" alt="">
+  <div class="wrap in">
+    <h2 id="h-proc">Precisão começa <em>no processo.</em></h2>
+    <p class="lede">Tecnologia, rotina analítica e controle de qualidade conectados para sustentar resultados consistentes e úteis ao campo.</p>
+  </div>
+</section>
+
+<section class="qual sec" id="qualidade" aria-labelledby="h-q">
+  <div class="wrap grid">
+    <div>
+      <h2 id="h-q">Confiabilidade construída <em>com método.</em></h2>
+      <p class="lede" style="margin-top:22px">Acreditação ISO/IEC 17025 desde 2017 nas matrizes solo e tecido vegetal, registro no MAPA para análises de fertilizantes e corretivos, além de programas interlaboratoriais.</p>
+    </div>
+    <div class="seals">
+      <div class="seal"><div class="lg"><img src="assets/img/c_iso.jpg" alt="ISO/IEC 17025"></div><b>ISO/IEC 17025</b><span>Acreditação em solo e tecido vegetal</span></div>
+      <div class="seal"><div class="lg"><img src="assets/img/c_mapa.jpg" alt="MAPA"></div><b>MAPA</b><span>Registro para fertilizantes e corretivos</span></div>
+      <div class="seal"><div class="lg"><img src="assets/img/c_embrapa.jpg" alt="Embrapa"></div><b>PAQLF · Embrapa</b><span>Controle de qualidade em fertilidade</span></div>
+      <div class="seal"><div class="lg"><img src="assets/img/c_cela.jpg" alt="C.E.L.A."></div><b>C.E.L.A.</b><span>Controle estadual de laboratórios</span></div>
+      <div class="seal"><div class="lg"><img src="assets/img/c_piatv.jpg" alt="PIATV"></div><b>PIATV</b><span>Interlaboratorial de tecido vegetal</span></div>
+      <div class="seal"><div class="lg"><img src="assets/img/c_iac.jpg" alt="IAC"></div><b>IAC</b><span>Instituto Agronômico</span></div>
+    </div>
+  </div>
+</section>
+<section class="mapa dark" id="mapa" aria-labelledby="h-mapa">
+  <div class="wrap mgrid">
+    <div class="mtxt">
+      <p class="meb">Registro MAPA · PR-00833</p>
+      <h2 id="h-mapa">Análises de fertilizantes e corretivos <em>para o MAPA.</em></h2>
+      <a class="btn mcta" id="mapaDoc" href="assets/docs/Laborsolo_Analises_MAPA.pdf" download="Laborsolo_Analises_MAPA.pdf"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg><span>Baixar portfólio MAPA<small>PDF · 11 páginas</small></span></a>
+    </div>
+    <a class="mdoc" id="mapaDoc2" href="#" download="Laborsolo_Analises_MAPA.pdf" aria-label="Baixar o portfólio MAPA em PDF">
+      <img src="assets/img/mapa_capa.jpg" alt="Capa do portfólio Análises laboratoriais para atendimento ao MAPA" loading="lazy">
+      <span class="mtag"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M12 15V3" /><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m7 10 5 5 5-5" /></svg>Baixar PDF</span>
+    </a>
+  </div>
+</section>
+
+<section class="sobre sec" id="sobre" aria-labelledby="h-sobre" style="padding-top:0">
+  <div class="wrap grid">
+    <div class="pics">
+      <img class="a" src="assets/img/icp.jpg" alt="Amostrador automático e espectrômetro ICP-OES no laboratório da Laborsolo">
+      <img class="b" src="assets/img/lab.jpg" alt="Equipe da Laborsolo trabalhando no laboratório">
+    </div>
+    <div>
+      <h2 id="h-sobre">Muito além de <em>um laboratório.</em></h2>
+      <p class="lede" style="margin-top:22px">Referência nacional em análises agronômicas, a Laborsolo atua como parceira para transformar dados laboratoriais em informação útil à tomada de decisão.</p>
+      <dl class="dl">
+        <div><dt>Amplitude</dt><dd>Solo, tecido vegetal, fertilizantes, corretivos, condicionadores, água, alimentação animal e outras matrizes.</dd></div>
+        <div><dt>Confiabilidade</dt><dd>Controles de qualidade, acreditação e programas interlaboratoriais.</dd></div>
+        <div><dt>Decisão</dt><dd>Informação para ganhar eficiência, reduzir desperdícios e orientar o manejo.</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="digital dark sec" id="digital" aria-labelledby="h-dig">
+  <div class="wrap grid">
+    <div>
+      <h2 id="h-dig">Seus resultados, <em>onde você estiver.</em></h2>
+      <p class="lede" style="margin-top:22px">O portal do cliente organiza laudos, amostras e histórico para consulta, acompanhamento e integração ao trabalho de campo e à gestão.</p>
+      <ul class="feat">
+        <li><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M20 6 9 17l-5-5" /></svg>Portal online</li>
+        <li><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M20 6 9 17l-5-5" /></svg>Aplicativo</li>
+        <li><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M20 6 9 17l-5-5" /></svg>Resultados por e-mail</li>
+        <li><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M20 6 9 17l-5-5" /></svg>Exportação para Excel</li>
+        <li><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M20 6 9 17l-5-5" /></svg>Histórico das análises</li>
+        <li><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M20 6 9 17l-5-5" /></svg>Gestão das amostras</li>
+      </ul>
+      <div class="ctas">
+        <a class="btn" href="https://novoportal.laborsolo.com.br/" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="m10 17 5-5-5-5" /><path d="M15 12H3" /><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" /></svg>Acessar o portal do cliente</a>
+        <a class="btn btn-ghost" href="https://wa.me/554391569168?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Laborsolo%20e%20quero%20criar%20meu%20acesso%20ao%20portal%20do%20cliente." target="_blank" rel="noopener">Ainda não tenho acesso</a>
+      </div>
+    </div>
+    <div class="screens">
+      <img class="phone" src="assets/img/app.jpg" alt="Aplicativo Laborsolo com a lista de resultados">
+      <img class="desk" src="assets/img/portal.jpg" alt="Portal do cliente Laborsolo com tabela de resultados">
+    </div>
+  </div>
+</section>
+
+<section class="ebooks sec" id="ebooks" aria-labelledby="h-eb">
+  <div class="wrap">
+    <div class="head">
+      <h2 id="h-eb">Conteúdo técnico para <em>decidir melhor.</em></h2>
+      <p class="lede">E-books gratuitos da Laborsolo sobre as análises que mudam a leitura do solo e da planta.</p>
+    </div>
+    <div class="rail" id="rail"></div>
+    <div class="foot">
+      <p class="small">Distribuição gratuita. Preencha um cadastro rápido e o PDF baixa na hora.</p>
+      <span style="display:flex;flex-wrap:wrap;gap:22px"><a class="link" href="https://www.instagram.com/laborsolo/" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>Instagram @laborsolo</a><a class="link" href="https://www.linkedin.com/company/28260329/" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>LinkedIn Laborsolo</a><a class="link" href="https://www.youtube.com/channel/UCaQEMbI68vnofacxhI-Yvkw" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>YouTube Laborsolo</a></span>
+    </div>
+  </div>
+</section>
+
+<section class="contato dark sec" id="contato" aria-labelledby="h-ct">
+  <div class="wrap grid">
+    <div>
+      <h2 id="h-ct">Fale com a <em>equipe comercial.</em></h2>
+      <p class="lede" style="margin-top:22px">Orçamentos, prazos, coleta e envio de amostras. Respondemos pelo canal que for mais prático para você.</p>
+      <div class="ctas" style="display:flex;flex-wrap:wrap;gap:12px;margin-top:34px">
+        <a class="btn btn-wa" data-wa="Olá! Vim pelo site da Laborsolo e quero um orçamento." href="#"><svg class="ic" aria-hidden="true" fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>Pedir orçamento no WhatsApp</a>
+      </div>
+    </div>
+    <ul class="chan">
+      <li><a data-wa="Olá! Vim pelo site da Laborsolo e quero falar com a equipe comercial." href="#"><span class="ico wa"><svg class="ic" aria-hidden="true" fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></span><span><small>WhatsApp comercial</small><b class="num">(43) 9175-4425</b></span><span class="arrow"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></a></li>
+      <li><a href="mailto:laborsolo@laborsolo.com.br"><span class="ico"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /><rect x="2" y="4" width="20" height="16" rx="2" /></svg></span><span><small>E-mail</small><b>laborsolo@laborsolo.com.br</b></span><span class="arrow"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></a></li>
+      <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Laborsolo+Av.+Tiradentes+1770+Londrina+PR" target="_blank" rel="noopener"><span class="ico"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg></span><span><small>Endereço</small><b>Av. Tiradentes, 1770 · Londrina/PR</b></span><span class="arrow"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></a></li>
+      <li><a href="https://novoportal.laborsolo.com.br/" target="_blank" rel="noopener"><span class="ico"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="m10 17 5-5-5-5" /><path d="M15 12H3" /><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" /></svg></span><span><small>Clientes</small><b>Portal do cliente</b></span><span class="arrow"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></a></li>
+      <li><a href="https://www.instagram.com/laborsolo/" target="_blank" rel="noopener"><span class="ico"><svg class="ic" aria-hidden="true" fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></span><span><small>Instagram</small><b>@laborsolo</b></span><span class="arrow"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></a></li>
+      <li><a href="https://www.linkedin.com/company/28260329/" target="_blank" rel="noopener"><span class="ico"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></span><span><small>LinkedIn</small><b>Laborsolo do Brasil</b></span><span class="arrow"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></a></li>
+      <li><a href="https://www.youtube.com/channel/UCaQEMbI68vnofacxhI-Yvkw" target="_blank" rel="noopener"><span class="ico"><svg class="ic" aria-hidden="true" fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></span><span><small>YouTube</small><b>Canal Laborsolo</b></span><span class="arrow"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span></a></li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap in">
+    <img src="assets/img/logo_white.png" alt="Laborsolo">
+    <nav aria-label="Rodapé">
+      <a href="#analises">Análises</a>
+      <a href="#ebooks">E-books</a>
+      <a href="https://novoportal.laborsolo.com.br/" target="_blank" rel="noopener">Portal do cliente</a>
+      <a href="https://www.instagram.com/laborsolo/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com/company/28260329/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.youtube.com/channel/UCaQEMbI68vnofacxhI-Yvkw" target="_blank" rel="noopener">YouTube</a>
+    </nav>
+    <span>© 2026 Laborsolo Laboratórios · Av. Tiradentes, 1770 · CEP 86071-000 · Londrina/PR</span>
+  </div>
 </footer>
 
-    <!-- Event snippet for Visualização de página conversion page -->
+<a class="fab" id="fab" data-wa="Olá! Vim pelo site da Laborsolo e quero falar com a equipe comercial." href="#" aria-label="Falar com o comercial no WhatsApp"><svg class="ic" aria-hidden="true" fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>Comercial</a>
+<div class="mbar" id="mbar">
+  <a class="btn btn-wa" data-wa="Olá! Vim pelo site da Laborsolo e quero falar com a equipe comercial." href="#"><svg class="ic" aria-hidden="true" fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>Comercial</a>
+  <a class="btn btn-ghost" href="https://novoportal.laborsolo.com.br/" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="m10 17 5-5-5-5" /><path d="M15 12H3" /><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" /></svg>Portal</a>
+</div>
+
+<dialog id="dlg" aria-labelledby="dTitle">
+  <div class="dlg">
+    <div class="top"><div><div class="meta" id="dMeta"></div><h3 id="dTitle"></h3></div><button class="x" id="dX" aria-label="Fechar"><svg class="ic" aria-hidden="true" fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg></button></div>
+    <div class="sc"><p class="qq" id="dQ"></p><p class="desc" id="dDesc"></p><div class="det" id="dDet"></div><img id="dImg" src="assets/img/n_quimica.jpg" alt=""></div>
+    <div class="bot" id="dActs"></div>
+  </div>
+</dialog>
+
+<dialog id="lDlg" aria-labelledby="lTitle">
+  <div class="dlg ldlg">
+    <div class="top"><div><div class="meta" id="lMeta">E-book gratuito</div><h3 id="lTitle"></h3></div><button class="x" id="lX" type="button" aria-label="Fechar"></button></div>
+    <div class="sc">
+      <form id="lForm" novalidate>
+        <div class="lhead"><img id="lCover" src="" alt=""><p>Preencha seus dados e o PDF baixa na hora. É gratuito.</p></div>
+        <div class="lf">
+          <div class="full"><label for="lfName">Nome completo</label><input id="lfName" name="name" type="text" autocomplete="name" maxlength="120" required><span class="err" data-for="name"></span></div>
+          <div><label for="lfWa">WhatsApp</label><input id="lfWa" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="(43) 99999-0000" maxlength="30"><span class="err" data-for="whatsapp"></span></div>
+          <div><label for="lfEmail">E-mail</label><input id="lfEmail" name="email" type="email" autocomplete="email" maxlength="150"><span class="err" data-for="email"></span></div>
+          <p class="hint full" style="margin-top:-8px">Informe pelo menos o WhatsApp ou o e-mail.</p>
+          <div><label for="lfCity">Cidade</label><input id="lfCity" name="city" type="text" autocomplete="address-level2" maxlength="80" required><span class="err" data-for="city"></span></div>
+          <div><label for="lfState">Estado</label><select id="lfState" name="state" autocomplete="address-level1" required><option value="">Selecione</option></select><span class="err" data-for="state"></span></div>
+          <fieldset class="full"><legend>Você é</legend><div class="chips" id="lfProfile"><label><input type="radio" name="profile" value="Producer" required>Produtor(a) rural</label><label><input type="radio" name="profile" value="Consultant">Consultor(a) / agrônomo(a)</label></div><span class="err" data-for="profile"></span></fieldset>
+          <fieldset class="full"><legend>Culturas que você trabalha <span style="font-weight:400;color:var(--muted)">(opcional)</span></legend><div class="chips" id="lfCult"></div></fieldset>
+          <div class="hp" aria-hidden="true"><label for="lfSite">Site</label><input id="lfSite" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+          <div class="full"><label class="consent"><input id="lfConsent" name="consentAccepted" type="checkbox" required><span id="lfConsentText"></span></label><span class="err" data-for="consentAccepted"></span></div>
+          <div class="full" id="lfTs"></div>
+          <p class="lmsg" id="lMsg" role="alert"></p>
+        </div>
+      </form>
+      <div class="ldone" id="lDone" hidden>
+        <h4>Download iniciado</h4>
+        <p>Obrigado! O PDF deve baixar em instantes. Se não começar, use o botão abaixo.</p>
+        <div class="acts"><button class="btn" type="button" id="lAgain">Baixar de novo</button><a class="btn btn-wa" id="lDoneWa" href="#">Falar com um agrônomo</a></div>
+      </div>
+    </div>
+    <div class="bot" id="lBot"><button class="btn" type="submit" form="lForm" id="lSend">Quero receber o PDF</button><a class="btn btn-ghost" id="lWa" href="#">Prefiro pelo WhatsApp</a></div>
+  </div>
+</dialog>
+
 <script>
-  gtag('event', 'conversion', {'send_to': 'AW-977385197/YfOGCMf-q5UDEO3thtID'});
-</script>
+(function(){
+var d=document.documentElement; d.classList.add('js');
+var WA='554391754425';
+var PROTO='https://drive.google.com/drive/folders/1U2rUNimsOQOfBWH4rUbcMBHOcwrYtKDT?usp=drive_link';
+var IMG={"n_quimica": "assets/img/n_quimica.jpg", "n_fisica": "assets/img/n_fisica.jpg", "n_bioas": "assets/img/n_bioas.jpg", "n_sfw": "assets/img/n_sfw.jpg", "n_meta": "assets/img/n_meta.jpg", "n_extrato": "assets/img/n_extrato.jpg", "n_tv": "assets/img/n_tv.jpg", "n_fmin": "assets/img/n_fmin.jpg", "n_forg": "assets/img/n_forg.jpg", "n_fom": "assets/img/n_fom.jpg", "n_cacidez": "assets/img/n_cacidez.jpg", "n_csodic": "assets/img/n_csodic.jpg", "n_remin": "assets/img/n_remin.jpg", "n_substrato": "assets/img/n_substrato.jpg", "n_agua": "assets/img/n_agua.jpg", "n_vinhaca": "assets/img/n_vinhaca.jpg", "n_broma": "assets/img/n_broma.jpg", "n_sal": "assets/img/n_sal.jpg", "n_r24": "assets/img/n_r24.jpg", "n_cbm": "assets/img/n_cbm.jpg", "n_glomalina": "assets/img/n_glomalina.jpg", "n_minerais": "assets/img/n_minerais.jpg", "n_hf": "assets/img/n_hf.jpg", "n_ktart": "assets/img/n_ktart.jpg", "n_contam": "assets/img/n_contam.jpg", "n_orgbio": "assets/img/n_orgbio.jpg", "n_mof": "assets/img/n_mof.jpg", "n_remin_hf": "assets/img/n_remin_hf.jpg", "n_remin_k": "assets/img/n_remin_k.jpg", "eb_fis": "assets/img/eb_fis.jpg", "eb_bio": "assets/img/eb_bio.jpg", "eb_sfw": "assets/img/eb_sfw.jpg", "eb_mof": "assets/img/eb_mof.jpg", "eb_tv": "assets/img/eb_tv.jpg"};
+var ICON={file:'<svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /><path d="M14 2v5a1 1 0 0 0 1 1h5" /><path d="M10 9H8" /><path d="M16 13H8" /><path d="M16 17H8" /></svg>',clock:'<svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg>',chev:'<svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="m9 18 6-6-6-6" /></svg>',wa:'<svg class="ic" aria-hidden="true" fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>',book:'<svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M12 5v16" /><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" /></svg>',zoom:'<svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><circle cx="11" cy="11" r="8" /><line x1="21" x2="16.65" y1="21" y2="16.65" /><line x1="11" x2="11" y1="8" y2="14" /><line x1="8" x2="14" y1="11" y2="11" /></svg>',arr:'<svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>',ext:'<svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg>'};
+function wa(msg){return 'https://wa.me/'+WA+'?text='+encodeURIComponent(msg);}
+function bindWa(root){(root||document).querySelectorAll('[data-wa]').forEach(function(a){a.href=wa(a.getAttribute('data-wa'));a.target='_blank';a.rel='noopener';});}
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-E7Z58D5B8R"></script>
+var G={fert:'Fertilidade do solo',bio:'Biologia do solo',estrutura:'Carbono e estrutura',planta:'Planta',insumos:'Insumos',agua:'Água e resíduos',animal:'Nutrição animal'};
+var EB={fis:'Análise Físico-Hídrica',bio:'Bioanálise de Solo (BioAS)',sfw:'Soil Food Web',mof:'Matéria Orgânica Fracionada',tv:'Tecido Vegetal com DRIS'};
+var A=[{"id": "quimica", "g": "fert", "t": "Química de Solo", "img": "n_quimica", "b": "ISO/IEC 17025", "q": "O que o solo tem e o que falta corrigir?", "d": "Fertilidade, acidez, macro e micronutrientes, CTC e saturação de bases. Cobre, ferro, manganês e zinco já vêm incluídos, e o P-Rem calcula o nível crítico de fósforo, enxofre e zinco específico do seu solo. Também fazemos o P-resina, método de referência em São Paulo.", "w": ["Antes de cada safra, para calagem e adubação", "Uma vez por ano em cada área homogênea", "Ponto de partida de qualquer diagnóstico"], "c": "Amostra composta de até 15 ha por área homogênea, em camadas: no mínimo 0–20 e 20–40 cm (ideal 0–10, 10–20 e 20–40 cm). Evite coletar logo após calcário, gesso ou KCl.", "p": "7 dias úteis", "vid": [["Propriedades e características", "80cJe4mttHs"], ["Macronutrientes catiônicos", "uIN0n76T9as"], ["Macronutrientes aniônicos", "hZrVhcGnjqA"], ["Micronutrientes", "rjkaZ-dhnvY"], ["Reação do solo", "o0O2J4mUGJc"], ["Restituição do equilíbrio da saturação", "pRQUV7kOJQE"], ["Capacidade tampão e nível crítico", "Mv9eDX6xsi8"]]}, {"id": "extrato", "g": "fert", "t": "Extrato de Saturação", "img": "n_extrato", "q": "O que a planta encontra na solução do solo agora?", "d": "Composição da solução do solo: cálcio, magnésio, potássio, fósforo, enxofre, micronutrientes (incluindo o cloreto) e sódio, com condutividade elétrica (salinidade) e índice RAS (sodicidade).", "w": ["Áreas irrigadas e fertirrigação", "Estufas, viveiros e substratos", "Sódio alto na análise convencional, queima de bordas ou murcha com solo úmido"], "c": "Mínimo de 500 g de solo. Em sequeiro, 0–20 cm; em área irrigada, 0–20 e 20–40 cm."}, {"id": "contam", "g": "fert", "t": "Contaminantes no Solo", "img": "n_contam", "q": "O solo tem metais pesados acima do aceitável?", "d": "Teores totais de arsênio, cádmio, chumbo, cromo total e hexavalente, mercúrio, níquel e selênio.", "w": ["Compra, arrendamento ou garantia de áreas", "Áreas com histórico de resíduos, lodo ou insumos de origem desconhecida", "Relatórios ambientais e de ESG"], "c": "Consulte a equipe comercial para quantidade e acondicionamento da amostra."}, {"id": "bioas", "g": "bio", "t": "BioAS", "img": "n_bioas", "b": "Tecnologia Embrapa", "q": "A biologia do seu solo está trabalhando?", "d": "Atividade das enzimas beta-glicosidase e arilsulfatase, com índices de qualidade do solo. Classifica a área como saudável, adoecendo, doente ou em recuperação, mesmo quando a química parece boa.", "w": ["Química boa e produtividade abaixo do esperado", "Monitoramento anual do manejo no mesmo ponto", "Junto com a análise química, no mesmo envio"], "c": "0–10 cm, após a colheita, cerca de 1 kg por amostra. Solo seco ao ar, sem refrigeração.", "p": "10 dias úteis"}, {"id": "r24", "g": "bio", "t": "Respiração 24h", "img": "n_r24", "q": "Qual é a atividade respiratória dos microrganismos do solo?", "d": "Mede o CO₂ liberado pelos microrganismos durante 24 horas de incubação, após a reidratação da amostra. É um indicador da atividade metabólica microbiana, sensível às condições do solo e às mudanças de manejo. O laudo classifica o resultado em oito faixas, de muito baixa a muito alta.", "w": ["Triagem rápida da atividade biológica entre áreas", "Acompanhar o efeito de plantas de cobertura, bioinsumos e matéria orgânica", "Complemento do BioAS e do Soil Food Web"], "c": "Consulte a equipe comercial para o protocolo de coleta e envio."}, {"id": "cbm", "g": "bio", "t": "Carbono da Biomassa Microbiana", "img": "n_cbm", "q": "Quanto carbono está armazenado na biomassa microbiana do solo?", "d": "Quantifica o carbono presente nos microrganismos vivos do solo, indicando o tamanho da biomassa microbiana. É um indicador sensível às mudanças de manejo, podendo responder antes mesmo de alterações perceptíveis no carbono orgânico total.", "w": ["Comparar sistemas de manejo e rotações", "Acompanhar a recuperação de áreas degradadas"], "c": "Consulte a equipe comercial para profundidade, conservação e envio da amostra."}, {"id": "glomalina", "g": "bio", "t": "Glomalina", "img": "n_glomalina", "q": "Como a glomalina se relaciona à qualidade do solo?", "d": "Determina a fração facilmente extraível da glomalina, proteína associada à atividade de fungos micorrízicos. Está associada com a estabilidade dos agregados e a dinâmica do carbono orgânico, contribuindo como indicador complementar na avaliação da saúde do solo.", "w": ["Avaliar o efeito de rotação, cobertura e plantio direto na estrutura", "Monitorar a transição regenerativa safra a safra", "Complemento da Físico-Hídrica e da MOF"], "c": "Camada de 0–10 cm.", "p": "10 dias úteis"}, {"id": "sfw", "g": "bio", "t": "Soil Food Web", "img": "n_sfw", "b": "Exclusiva no Brasil", "q": "Quais grupos de organismos compõem a teia alimentar do seu solo?", "d": "Por meio de microscopia direta, avalia grupos de organismos como bactérias, fungos, protozoários, nematoides e microartrópodes. A análise inclui indicadores como a relação fungo/bactéria, a presença de potenciais patógenos e sinais associados à anaerobiose, contribuindo para a avaliação da estrutura e do funcionamento da teia alimentar e da saúde biológica do solo.", "eb": "sfw", "w": ["Transição para manejo regenerativo ou uso de biológicos", "Nematoides ou doenças de solo recorrentes", "A cada 2 anos ou após mudança de manejo"], "c": "0–10 cm, solo úmido em recipiente vedado e refrigerado (4–8 °C). Envie em até 48–72 h."}, {"id": "meta", "g": "bio", "t": "Metagenômica", "img": "n_meta", "b": "Parceria BiomeMakers", "q": "Quais microrganismos compõem a comunidade microbiana do seu solo e quais funções eles exercem?", "d": "Por meio do sequenciamento de DNA, caracteriza a comunidade de bactérias e fungos do solo e investiga seu potencial funcional e suas interações ecológicas. A análise contempla indicadores de biodiversidade, ciclagem de nutrientes, biocontrole, adaptação ao estresse, resiliência e risco de doenças, contribuindo para compreender o funcionamento biológico e a saúde do solo.", "w": ["Problemas recorrentes sem causa aparente nas outras análises", "Saber se biológicos e inoculantes estão se estabelecendo", "Baseline e monitoramento regenerativo ou ESG a cada 2–3 anos"], "c": "A preservação do DNA exige cuidados específicos. Peça o protocolo atualizado à equipe antes de coletar."}, {"id": "fisica", "g": "estrutura", "t": "Físico-Hídrica", "img": "n_fisica", "b": "Metodologia própria", "q": "Quanta água o solo consegue armazenar e disponibilizar às plantas?", "d": "Avalia a granulometria (textura) e as propriedades físico-hídricas do solo em amostras indeformadas, incluindo a distribuição de macro, micro e criptoporos, a densidade, o grau de compactação e a capacidade de água disponível (CAD). Os resultados permitem caracterizar a estrutura do solo e sua capacidade de armazenar e disponibilizar água às plantas.", "eb": "fis", "w": ["Veranicos que derrubam a produtividade", "Encharcamento, enxurrada ou suspeita de compactação", "Textura na primeira análise da área; perfil a cada 2–3 anos"], "c": "Anéis volumétricos em 5 profundidades, com 3 repetições (kit de 15 anéis). A Laborsolo envia coletor, anéis, ficha e caixa. Defina os pontos de preferência em período de estresse hídrico."}, {"id": "mof", "g": "estrutura", "t": "Matéria Orgânica Fracionada (MOF)", "img": "n_mof", "q": "Como o carbono orgânico está distribuído no solo?", "d": "Separa a matéria orgânica particulada (MOP), mais sensível às mudanças de manejo, da matéria orgânica associada aos minerais (MOAM), cuja decomposição tende a ser mais lenta devido à interação com a fração mineral do solo. Permite acompanhar a distribuição do carbono entre essas frações e identificar mudanças na dinâmica da matéria orgânica do solo.", "note": "Em destaque: o bloco de carbono do laudo de Química de Solo, onde saem os resultados da MOF.", "eb": "mof", "w": ["Monitoramento recorrente da matéria orgânica", "Manejo regenerativo, remineralizadores e projetos de carbono", "Pode ser somada à análise química"], "c": "Mesma coleta da análise química. Para comparar anos, colete sempre na mesma época e na mesma profundidade."}, {"id": "tv", "g": "planta", "t": "Tecido Vegetal", "img": "n_tv", "b": "ISO/IEC 17025", "q": "Como está o estado nutricional da sua planta?", "d": "Determina os teores de macro e micronutrientes, elementos benéficos e metais em folhas, grãos, frutos ou na planta inteira. A interpretação pelo método DRIS, com normas próprias da Laborsolo, auxilia na identificação de desequilíbrios nutricionais e na avaliação do estado nutricional das plantas.", "eb": "tv", "w": ["A partir de V3–V4 em soja e milho, antes do sintoma", "2 a 4 coletas por safra, para corrigir e confirmar a resposta", "Culturas perenes: café, citros, cana e uva"], "c": "Folha índice da cultura (30 a 50 folhas), em saco de papel, sem lavar e sem folhas molhadas. Aguarde 7–10 dias após aplicação foliar e envie em até 48 h. Protocolos por cultura: soja, milho, feijão, algodão, trigo, cana, café e citros.", "p": "Até 5 dias úteis"}, {"id": "tv-dris", "g": "planta", "t": "Interpretação DRIS", "img": "n_tv", "q": "Qual nutriente limita a lavoura primeiro?", "d": "Bancos DRIS calibrados há mais de 20 anos transformam o resultado foliar em ordem de limitação nutricional, em qualquer estádio da cultura.", "hideList": true, "eb": "tv", "w": ["Priorizar a correção nutricional", "Confirmar a resposta a uma intervenção"], "c": "Mesma coleta do tecido vegetal."}, {"id": "fmin", "g": "insumos", "t": "Fertilizante Mineral", "img": "n_fmin", "b": "Registro MAPA", "q": "O insumo entrega o que promete?", "d": "Caracterização de macro e microelementos, contaminantes, propriedades físico-químicas e natureza física.", "w": ["Controle de qualidade na compra ou na produção", "Conformidade e comparação de fornecedores"], "c": "Consulte a equipe comercial para quantidade e acondicionamento da amostra."}, {"id": "forg", "g": "insumos", "t": "Fertilizante Orgânico", "img": "n_forg", "b": "Registro MAPA", "q": "O insumo entrega o que promete?", "d": "Caracterização de macro e microelementos, contaminantes, substâncias orgânicas, propriedades físico-químicas, relações agronômicas, natureza física, materiais inertes e contaminantes biológicos.", "w": ["Controle de qualidade na compra ou na produção", "Conformidade e comparação de fornecedores"], "c": "Consulte a equipe comercial para quantidade e acondicionamento da amostra."}, {"id": "fom", "g": "insumos", "t": "Fertilizante Organomineral", "img": "n_fom", "b": "Registro MAPA", "q": "O insumo entrega o que promete?", "d": "Caracterização de macro e microelementos, contaminantes, substâncias orgânicas, propriedades físico-químicas, relações agronômicas, natureza física, materiais inertes e contaminantes biológicos.", "w": ["Controle de qualidade na compra ou na produção", "Conformidade e comparação de fornecedores"], "c": "Consulte a equipe comercial para quantidade e acondicionamento da amostra."}, {"id": "orgbio", "g": "insumos", "t": "Análises Biológicas de Insumos", "img": "n_orgbio", "q": "Como está a composição e a atividade biológica do material?", "d": "Soil Food Web (SFW) e Respiração em 24h aplicados a insumos orgânicos, organominerais e compostos. O SFW caracteriza a comunidade biológica, enquanto a Respiração em 24h mede o CO₂ liberado pelos microrganismos, indicando a atividade metabólica do material.", "w": ["Controle de qualidade de compostos e biofertilizantes", "Diferenciar o produto no mercado com laudo biológico", "Comparar lotes e processos de compostagem"], "c": "Consulte a equipe comercial para conservação e envio da amostra."}, {"id": "cacidez", "g": "insumos", "t": "Corretivo de Acidez", "img": "n_cacidez", "b": "Registro MAPA", "q": "O insumo entrega o que promete?", "d": "Parâmetros de qualidade de calcários e demais corretivos de acidez.", "w": ["Controle de qualidade na compra ou na produção", "Conformidade e comparação de fornecedores"], "c": "Consulte a equipe comercial para quantidade e acondicionamento da amostra."}, {"id": "csodic", "g": "insumos", "t": "Corretivo de Sodicidade", "img": "n_csodic", "b": "Registro MAPA", "q": "O insumo entrega o que promete?", "d": "Avaliação de corretivos usados na recuperação de solos sódicos.", "w": ["Controle de qualidade na compra ou na produção", "Conformidade e comparação de fornecedores"], "c": "Consulte a equipe comercial para quantidade e acondicionamento da amostra."}, {"id": "remin", "g": "insumos", "t": "Remineralizador", "img": "n_remin", "q": "Qual o potencial real desta rocha?", "d": "Caracterização geoquímica, mineralógica, granulométrica e avaliação do potencial do produto como remineralizador.", "w": ["Avaliação de remineralizadores antes do uso", "Controle de qualidade da produção", "Registro e enquadramento do produto"], "c": "Consulte a equipe comercial para quantidade e acondicionamento da amostra."}, {"id": "substrato", "g": "insumos", "t": "Substrato", "img": "n_substrato", "q": "O substrato está pronto para as mudas?", "d": "Atributos químicos e físicos de substratos para produção de mudas e cultivo protegido.", "w": ["Viveiros e produção de mudas", "Cultivo protegido"], "c": "Consulte a equipe comercial para quantidade e acondicionamento da amostra."}, {"id": "agua", "g": "agua", "t": "Água", "img": "n_agua", "q": "Qual é a qualidade da água que você utiliza?", "d": "Avaliação da qualidade da água para diferentes finalidades, incluindo irrigação, pulverização, abastecimento de propriedades, condomínios e outras aplicações.", "w": ["Irrigação e fertirrigação", "Preparo de caldas de pulverização", "Abastecimento de propriedades e condomínios"], "c": "Consulte a equipe comercial para quantidade e acondicionamento da amostra."}, {"id": "vinhaca", "g": "agua", "t": "Vinhaça", "img": "n_vinhaca", "q": "Quanto esta vinhaça entrega ao solo?", "d": "Composição da vinhaça para planejar a fertirrigação com segurança.", "w": ["Planejamento de fertirrigação", "Usinas e áreas de cana"], "c": "Consulte a equipe comercial para quantidade e acondicionamento da amostra."}, {"id": "broma", "g": "animal", "t": "Bromatológica", "img": "n_broma", "q": "Qual o valor nutricional deste alimento?", "d": "Valor nutricional de forragens, grãos, silagens e rações.", "w": ["Formulação de dietas", "Qualidade de silagem e pastagem"], "c": "Consulte a equipe comercial para quantidade e acondicionamento da amostra."}, {"id": "sal", "g": "animal", "t": "Sal Mineral", "img": "n_sal", "q": "O suplemento tem os minerais declarados?", "d": "Teores de minerais em suplementos para nutrição animal.", "w": ["Controle de qualidade de suplementos minerais", "Comparação de fornecedores"], "c": "Consulte a equipe comercial para quantidade e acondicionamento da amostra."}];window.LAB_A=A;
+var GUIDE=[{"k": "adubar", "i": "sprout", "t": "Vou corrigir e adubar a próxima safra", "x": "A análise química é a base da recomendação de calagem e adubação. Peça a versão Premium, com P-Rem, enxofre e boro: sem o P-Rem, o fósforo do laudo fica sem nível crítico de referência para o seu solo.", "r": ["quimica", "fisica"], "tip": "<b>Dica:</b> colete em camadas (0–20 e 20–40 cm, no mínimo) e inclua a textura na primeira análise da área. Em São Paulo, peça também o P-resina."}, {"k": "produtividade", "i": "layers", "t": "A química está boa, mas a produtividade não vem", "x": "Duas fazendas com a mesma análise química podem colher muito diferente. Quando a química não explica, a resposta costuma estar na biologia, na estrutura física ou na qualidade do carbono.", "r": ["bioas", "fisica", "mof", "r24"], "tip": "<b>Dica:</b> BioAS e análise química podem sair da mesma amostra quando a coleta é feita na camada de 0–10 cm."}, {"k": "agua", "i": "droplets", "t": "Sofro com veranico, encharcamento ou compactação", "x": "A análise físico-hídrica mostra quanto de água o solo guarda, onde está a compactação e quantos dias a lavoura aguenta sem chuva. A biologia ativa é quem constrói e mantém essa estrutura.", "r": ["fisica", "bioas"], "tip": "<b>Dica:</b> o kit de 15 anéis entrega o perfil completo, a meta de enraizamento e a simulação de risco hídrico."}, {"k": "safra", "i": "leaf", "t": "Quero acompanhar a nutrição durante a safra", "x": "A análise foliar mostra o que a planta está absorvendo de fato. Com o DRIS, ela vale desde as fases iniciais, quando ainda há tempo de corrigir.", "r": ["tv", "tv-dris"], "tip": "<b>Dica:</b> 2 a 4 coletas por safra: diagnosticar, corrigir e confirmar a resposta 7 a 10 dias depois. <a href=\"https://drive.google.com/drive/folders/1U2rUNimsOQOfBWH4rUbcMBHOcwrYtKDT?usp=drive_link\" target=\"_blank\" rel=\"noopener\" style=\"color:#fff\">Baixe o protocolo de coleta da sua cultura</a>."}, {"k": "regen", "i": "recycle", "t": "Estou em transição regenerativa ou uso biológicos", "x": "Na agricultura convencional, você analisa para saber quanto aplicar. Na regenerativa, para saber onde pode deixar de aplicar. O diagnóstico combina atividade biológica, teia alimentar, estrutura, DNA e carbono.", "r": ["bioas", "sfw", "r24", "glomalina", "mof", "meta"], "tip": "<b>Dica:</b> o combo BioAS Premium Regenera reúne BioAS, análise química, MOF e Soil Food Web em um só pedido."}, {"k": "irrigo", "i": "waves", "t": "Irrigo, faço fertirrigação ou cultivo protegido", "x": "Em área irrigada, o que importa é a solução do solo: salinidade, sodicidade e o que está disponível para a raiz agora. A qualidade da água fecha o diagnóstico.", "r": ["extrato", "agua", "quimica"], "tip": "<b>Dica:</b> o combo Profissional reúne a análise química Premium (macro e micronutrientes, P-Rem, matéria orgânica, enxofre e boro) e o Extrato de Saturação."}, {"k": "carbono", "i": "badge-check", "t": "Preciso comprovar saúde do solo e carbono", "x": "Carbono orgânico, atividade biológica e estrutura física são as três métricas internacionais de saúde do solo; o DNA microbiano entra nos relatórios ESG (ambientais, sociais e de governança) mais avançados. Laudos auditáveis servem para crédito, seguro, compra ou arrendamento de áreas.", "r": ["mof", "bioas", "fisica", "contam", "meta"], "tip": "<b>Dica:</b> faça o diagnóstico de entrada (baseline) e repita no mesmo ponto para documentar a evolução."}, {"k": "rocha", "i": "mountain", "t": "Uso ou produzo remineralizadores", "x": "Remineralizadores podem liberar nutrientes gradualmente no solo. Para compreender suas características e seu uso, é importante conhecer a composição geoquímica e mineralógica da rocha, sua granulometria e seu potencial como fonte de elementos de interesse agronômico.", "r": ["remin"], "tip": "<b>Dica:</b> analise o solo antes da aplicação do remineralizador e repita as análises nos mesmos pontos nas safras seguintes para acompanhar as alterações ao longo do tempo."}, {"k": "insumos", "i": "package-check", "t": "Produzo, compro ou revendo insumos", "x": "Fertilizantes, corretivos, remineralizadores, substratos e alimentos para animais precisam entregar o que o rótulo promete. A análise comprova a qualidade antes do uso ou da venda.", "r": ["fmin", "forg", "fom", "cacidez", "csodic", "orgbio", "remin", "substrato", "broma"], "tip": "<b>Dica:</b> fale com a nossa equipe sobre volume e recorrência de amostras."}];
+var byId={};A.forEach(function(a){byId[a.id]=a;});
+
+/* filtros + lista */
+var list=document.getElementById('list'),filters=document.getElementById('filters');
+var counts={all:0};A.forEach(function(a){if(a.hideList)return;counts.all++;counts[a.g]=(counts[a.g]||0)+1;});
+[['all','Todas']].concat(Object.keys(G).map(function(k){return[k,G[k]];})).forEach(function(f,i){
+  var b=document.createElement('button');b.className='chip';b.type='button';b.dataset.f=f[0];b.setAttribute('aria-pressed',i===0?'true':'false');
+  b.innerHTML=f[1]+'<span class="n">'+counts[f[0]]+'</span>';filters.appendChild(b);
+});
+var html='';Object.keys(G).forEach(function(g){
+  html+='<div class="grp" data-g="'+g+'">'+G[g]+'</div>';
+  A.filter(function(a){return a.g===g&&!a.hideList;}).forEach(function(a){
+    html+='<button class="item" type="button" data-id="'+a.id+'" data-g="'+g+'" aria-controls="viewer"><span class="t">'+a.t+'</span><span class="arr" aria-hidden="true">'+ICON.arr+'</span></button>';
+  });
+});
+list.innerHTML=html;
+filters.addEventListener('click',function(e){var b=e.target.closest('.chip');if(!b)return;
+  filters.querySelectorAll('.chip').forEach(function(c){c.setAttribute('aria-pressed',c===b?'true':'false');});
+  var f=b.dataset.f;list.querySelectorAll('[data-g]').forEach(function(el){el.hidden=!(f==='all'||el.dataset.g===f);});
+  var first=list.querySelector('.item:not([hidden])');if(first&&!mq.matches)select(first.dataset.id);
+});
+
+/* viewer */
+var mq=window.matchMedia('(max-width:980px)');
+var viewer=document.getElementById('viewer'),vDoc=document.getElementById('vDoc'),vImg=document.getElementById('vImg');
+var cur=null;
+function actsHTML(a){
+  var h='<a class="btn btn-wa" data-wa="Olá! Vim pelo site da Laborsolo e quero um orçamento de '+a.t+'." href="#">'+ICON.wa+'Orçar esta análise</a>';
+  if(a.g==='planta')h+='<a class="btn btn-ghost" href="'+PROTO+'" target="_blank" rel="noopener">'+ICON.file+'Protocolos de coleta</a>';
+  if(a.eb)h+='<button type="button" class="btn btn-ghost" data-eb="'+a.eb+'">'+ICON.book+'E-book: '+EB[a.eb]+'</button>';
+  return h;
+}
+function esc(t){return String(t).replace(/[&<>]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;'}[c];});}
+function detHTML(a){
+  var h='<div><h4>Quando usar</h4><ul>'+(a.w||[]).map(function(x){return '<li>'+esc(x)+'</li>';}).join('')+'</ul></div>';
+  h+='<div><h4>Como coletar</h4><p>'+esc(a.c||'Consulte a equipe comercial para o protocolo de coleta.')+'</p>'+(a.p?'<span class="pz">'+ICON.clock+'Prazo: '+esc(a.p)+'</span>':'')+'</div>';
+  if(a.vid)h+='<div class="vids"><h4>Como ler este laudo · vídeos</h4>'+(window.vboxHTML?vboxHTML(a):'')+'</div>';
+  return h;
+}
+function fill(a){
+  document.getElementById('vMeta').textContent=G[a.g];
+  var bd=document.getElementById('vBadge');if(a.b){bd.textContent=a.b;bd.hidden=false;}else bd.hidden=true;
+  document.getElementById('vTitle').textContent=a.t;
+  document.getElementById('vQ').textContent=a.q||'';
+  document.getElementById('vDesc').textContent=a.d;
+  document.getElementById('vDet').innerHTML=detHTML(a);
+  document.getElementById('vPh').textContent=a.t;
+  vDoc.classList.toggle('empty',!a.img);
+  document.getElementById('vNote').textContent=a.img?(a.note||'Exemplo real do formato de laudo entregue ao cliente.'):'';
+  if(window.vReset)vReset();
+  var vv=document.getElementById('vVid');if(a.vid){vv.hidden=false;vv.setAttribute('data-vids',a.id);document.getElementById('vVidN').textContent=a.vid.length;}else vv.hidden=true;
+  var acts=document.getElementById('vActs');acts.innerHTML=actsHTML(a);bindWa(acts);
+}
+function select(id,instant){
+  var a=byId[id];if(!a||cur===id)return;cur=id;
+  list.querySelectorAll('.item').forEach(function(i){i.setAttribute('aria-current',i.dataset.id===id?'true':'false');});
+  var src=a.img?IMG[a.img]:vImg.src;
+  vImg.alt='Laudo de '+a.t;
+  var reduce=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  if(instant||reduce){vImg.src=src;fill(a);return;}
+  vDoc.classList.add('swap');viewer.classList.add('swap');
+  setTimeout(function(){
+    var im=new Image();im.onload=im.onerror=function(){vImg.src=src;fill(a);requestAnimationFrame(function(){vDoc.classList.remove('swap');viewer.classList.remove('swap');});};im.src=src;
+  },180);
+}
+list.addEventListener('click',function(e){var b=e.target.closest('.item');if(!b)return;
+  if(mq.matches)openDlg(b.dataset.id);else select(b.dataset.id);});
+list.addEventListener('mouseover',function(e){var b=e.target.closest('.item');if(!b||mq.matches)return;
+  clearTimeout(list._h);list._h=setTimeout(function(){select(b.dataset.id);},140);});
+vDoc.addEventListener('click',function(){if(cur&&byId[cur].img)openDlg(cur);});
+if(!mq.matches)select("quimica",true);else{fill(byId.quimica);}
+
+/* dialog */
+var dlg=document.getElementById('dlg');
+function openDlg(id){var a=byId[id];if(!a)return;
+  document.getElementById('dMeta').textContent=G[a.g];
+  document.getElementById('dTitle').textContent=a.t;
+  document.getElementById('dQ').textContent=a.q||'';
+  document.getElementById('dDesc').textContent=a.d+(a.note&&a.img?' '+a.note:'');
+  document.getElementById('dDet').innerHTML=detHTML(a);
+  var im=document.getElementById('dImg');if(a.img){im.src=IMG[a.img];im.alt='Laudo de '+a.t;im.classList.remove('none');}else{im.classList.add('none');im.alt='';}
+  var acts=document.getElementById('dActs');acts.innerHTML=actsHTML(a);bindWa(acts);
+  if(dlg.showModal)dlg.showModal();else dlg.setAttribute('open','');
+  dlg.querySelector('.sc').scrollTop=0;
+}
+document.getElementById('dX').addEventListener('click',function(){dlg.close();});
+dlg.addEventListener('click',function(e){if(e.target===dlg)dlg.close();});
+document.querySelectorAll('[data-open]').forEach(function(b){b.addEventListener('click',function(){openDlg(b.dataset.open);});});
+
+/* guia */
+var objs=document.getElementById('objs'),rec=document.getElementById('rec');
+var GICON={sprout:'<svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M14 9.536V7a4 4 0 0 1 4-4h1.5a.5.5 0 0 1 .5.5V5a4 4 0 0 1-4 4 4 4 0 0 0-4 4c0 2 1 3 1 5a5 5 0 0 1-1 3" /><path d="M4 9a5 5 0 0 1 8 4 5 5 0 0 1-8-4" /><path d="M5 21h14" /></svg>',layers:'<svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z" /><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12" /><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17" /></svg>',droplets:'<svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z" /><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97" /></svg>',leaf:'<svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M11 20a10 10 0 0010-10 25.9 25.9 0 00-1.04-7.281 1 1 0 00-1.755-.325C15.833 5.5 13 5.5 9.8 6.1A7 7 0 0011 20" /><path d="M2 21a5 5 0 012.911-4.544C7.613 15.212 8.351 15.24 11 13" /></svg>',recycle:'<svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M7 19H4.815a1.83 1.83 0 0 1-1.57-.881 1.785 1.785 0 0 1-.004-1.784L7.196 9.5" /><path d="M11 19h8.203a1.83 1.83 0 0 0 1.556-.89 1.784 1.784 0 0 0 0-1.775l-1.226-2.12" /><path d="m14 16-3 3 3 3" /><path d="M8.293 13.596 7.196 9.5 3.1 10.598" /><path d="m9.344 5.811 1.093-1.892A1.83 1.83 0 0 1 11.985 3a1.784 1.784 0 0 1 1.546.888l3.943 6.843" /><path d="m13.378 9.633 4.096 1.098 1.097-4.096" /></svg>',waves:'<svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M2 12q2.5 2 5 0t5 0 5 0 5 0" /><path d="M2 19q2.5 2 5 0t5 0 5 0 5 0" /><path d="M2 5q2.5 2 5 0t5 0 5 0 5 0" /></svg>','badge-check':'<svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /><path d="m16 9-5.5 5.5L8 12" /></svg>','package-check':'<svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M12 22V12" /><path d="m16 17 2 2 4-4" /><path d="M21 11.127V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.729l7 4a2 2 0 0 0 2 .001l1.32-.753" /><path d="M3.29 7 12 12l8.71-5" /><path d="m7.5 4.27 8.997 5.148" /></svg>',mountain:'<svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="m8 3 4 8 5-5 5 15H2L8 3z" /></svg>'};
+objs.innerHTML=GUIDE.map(function(o,i){return '<button class="obj" role="tab" type="button" id="obj-'+o.k+'" data-k="'+o.k+'" aria-selected="'+(i?'false':'true')+'" aria-controls="rec"><span class="oi">'+GICON[o.i]+'</span><span class="ot">'+o.t+'</span><span class="oa">'+ICON.arr+'</span></button>';}).join('');
+function showObj(k,instant){
+  var o=GUIDE.filter(function(x){return x.k===k;})[0];if(!o)return;
+  objs.querySelectorAll('.obj').forEach(function(b){b.setAttribute('aria-selected',b.dataset.k===k?'true':'false');});
+  function put(){
+    document.getElementById('rT').textContent=o.t;
+    document.getElementById('rX').textContent=o.x;
+    document.getElementById('rTip').innerHTML=o.tip;
+    document.getElementById('rC').innerHTML=o.r.map(function(id){var a=byId[id];return '<button class="rchip" type="button" data-go="'+id+'">'+a.t+ICON.chev+'</button>';}).join('');
+    var w=document.getElementById('rWa');w.setAttribute('data-wa','Olá! Vim pelo site da Laborsolo. Meu objetivo: '+o.t.toLowerCase()+'. Pode me ajudar a montar o pedido de análises?');bindWa(rec);
+  }
+  var reduce=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  if(instant||reduce){put();return;}
+  rec.classList.add('swap');setTimeout(function(){put();requestAnimationFrame(function(){rec.classList.remove('swap');});},160);
+}
+objs.addEventListener('click',function(e){var b=e.target.closest('.obj');if(!b)return;showObj(b.dataset.k);if(mq.matches)setTimeout(function(){rec.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth',block:'start'});},180);});
+objs.addEventListener('keydown',function(e){if(e.key!=='ArrowDown'&&e.key!=='ArrowUp')return;var bs=[].slice.call(objs.querySelectorAll('.obj'));var i=bs.indexOf(document.activeElement);if(i<0)return;e.preventDefault();var n=bs[(i+(e.key==='ArrowDown'?1:bs.length-1))%bs.length];n.focus();showObj(n.dataset.k);});
+document.getElementById('rC').addEventListener('click',function(e){var b=e.target.closest('[data-go]');if(!b)return;var id=b.dataset.go;
+  if(mq.matches){openDlg(id);return;}
+  filters.querySelector('[data-f="all"]').click();
+  document.getElementById('analises').scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'});
+  setTimeout(function(){cur=null;select(id);},350);
+});
+showObj(GUIDE[0].k,true);
+
+/* materiais para download
+   O catálogo, as capas e os PDFs ficam no LimsIA (contrato: LimsIA docs/api/contrato-site-materiais.md).
+   A lista abaixo é o fallback: aparece até a API responder e fica no lugar se ela falhar,
+   com os pedidos indo para o WhatsApp. */
+var LOCAL=/^(localhost|127\.0\.0\.1)$/.test(location.hostname);
+var MAT={
+  api:'https://limsia.laborsolo.com.br',
+  // Site key do Cloudflare Turnstile. Vazia: os materiais com cadastro são pedidos pelo WhatsApp.
+  turnstile:'0x4AAAAAAGJBeCIIQSJOiRv7',
+  // Troque a versão sempre que o texto de consentimento mudar.
+  consentVersion:'2026-11-v1',
+  consentText:'Autorizo a Laborsolo a usar estes dados para enviar o material e entrar em contato sobre análises e conteúdos técnicos, conforme a LGPD. Posso pedir a exclusão a qualquer momento pelo e-mail laborsolo@laborsolo.com.br.'
+};
+if(LOCAL){ // teste local: ?api=http://localhost:5000 e a site key de teste da Cloudflare
+  var qApi=new URLSearchParams(location.search).get('api');if(qApi)MAT.api=qApi;
+  if(!MAT.turnstile)MAT.turnstile='1x00000000000000000000AA';
+}
+var EBS=[
+ {k:'fis',t:'Análise Físico-Hídrica',s:'O solo como você nunca viu. Poros, ar e água que definem o desempenho das plantas.'},
+ {k:'sfw',t:'Soil Food Web',s:'A vida do solo como você nunca viu: quem são os microrganismos e o que eles fazem.'},
+ {k:'mof',t:'Matéria Orgânica Fracionada',s:'O carbono do solo não é um número. É uma trajetória.'},
+ {k:'tv',t:'O que a planta está dizendo?',s:'Análise de tecido vegetal com DRIS, da coleta ao diagnóstico.'}
+];
+// e-book citado no detalhe de cada análise → material do catálogo (pelo slug ou por um trecho do título)
+var EB_MAT={fis:['fisico-hidrica','físico'],bio:['bioas','bioan'],sfw:['soil-food-web','soil food'],mof:['mof','fracionada'],tv:['tecido-vegetal-dris','tecido']};
+var TYPE={Ebook:'E-book',Protocol:'Protocolo',Portfolio:'Portfólio'};
+var UF='AC AL AP AM BA CE DF ES GO MA MT MS MG PA PB PR PE PI RJ RN RS RO RR SC SP SE TO'.split(' ');
+var CULT=[['soja','Soja'],['milho','Milho'],['cafe','Café'],['algodao','Algodão'],['cana','Cana-de-açúcar'],['laranja','Laranja/Citros'],['trigo','Trigo'],['feijao','Feijão'],['pastagem','Pastagem'],['hf','Hortifrúti'],['outra','Outra']];
+var INAPP=/Instagram|FBAN|FBAV|WhatsApp|Line\//i.test(navigator.userAgent);
+var rail=document.getElementById('rail'),mats=null;
+function escA(t){return String(t).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+function abs(p){return new URL(p,MAT.api).href;}
+function waMat(t){return 'Olá! Vim pelo site da Laborsolo e quero receber o material "'+t+'".';}
+function fetchT(url,opt,ms){
+  var c=window.AbortController?new AbortController():null,t;
+  if(c){opt.signal=c.signal;t=setTimeout(function(){c.abort();},ms);}
+  return fetch(url,opt).then(function(r){clearTimeout(t);return r;},function(e){clearTimeout(t);throw e;});
+}
+function fbHTML(e){
+  return '<a class="eb" data-wa="'+escA(waMat(e.t))+'" href="#"><span class="cv"><img src="'+IMG['eb_'+e.k]+'" alt="Capa do e-book '+escA(e.t)+'"></span><span class="ty">E-book</span><h3>'+esc(e.t)+'</h3><p>'+esc(e.s)+'</p><span class="link go">Pedir pelo WhatsApp'+ICON.ext+'</span></a>';
+}
+function cardHTML(m){
+  var inner='<span class="cv"><img src="'+escA(abs(m.coverUrl))+'" alt="Capa: '+escA(m.title)+'" loading="lazy" onerror="this.style.visibility=\'hidden\'"></span><span class="ty">'+esc(TYPE[m.type]||'Material')+'</span><h3>'+esc(m.title)+'</h3>'+(m.subtitle?'<p>'+esc(m.subtitle)+'</p>':'');
+  if(!m.requiresRegistration&&m.downloadUrl)return '<a class="eb" href="'+escA(abs(m.downloadUrl))+'">'+inner+'<span class="link go">Baixar grátis'+ICON.ext+'</span></a>';
+  if(!MAT.turnstile)return '<a class="eb" data-wa="'+escA(waMat(m.title))+'" href="#">'+inner+'<span class="link go">Pedir pelo WhatsApp'+ICON.ext+'</span></a>';
+  return '<a class="eb" data-mat="'+escA(m.slug)+'" href="#ebooks">'+inner+'<span class="link go">Quero receber'+ICON.arr+'</span></a>';
+}
+function renderFallback(){mats=null;rail.innerHTML=EBS.map(fbHTML).join('');bindWa(rail);}
+function loadMats(){
+  return fetchT(MAT.api+'/api/public/materials',{},4000).then(function(r){
+    if(!r.ok)throw new Error(String(r.status));return r.json();
+  }).then(function(list){
+    var ok=Array.isArray(list)&&list.length&&list.every(function(m){return m&&m.slug&&m.title&&m.coverUrl;});
+    if(!ok)throw new Error('lista vazia');
+    mats=list;rail.innerHTML=list.map(cardHTML).join('');bindWa(rail);
+  }).catch(function(){if(mats===null)renderFallback();});
+}
+function matBySlug(s){if(!mats)return null;for(var i=0;i<mats.length;i++)if(mats[i].slug===s)return mats[i];return null;}
+function matForEb(k){
+  var h=EB_MAT[k];if(!h||!mats)return null;
+  var m=matBySlug(h[0]);if(m)return m;
+  for(var i=0;i<mats.length;i++)if(mats[i].title.toLowerCase().indexOf(h[1])>=0)return mats[i];
+  return null;
+}
+renderFallback();loadMats();
+
+/* formulário de cadastro → token → PDF */
+var lDlg=document.getElementById('lDlg'),lForm=document.getElementById('lForm'),lMsg=document.getElementById('lMsg');
+var lSend=document.getElementById('lSend'),lDone=document.getElementById('lDone'),lBot=document.getElementById('lBot');
+var lMat=null,lTok=null,busy=false,tsId=null,tsToken='',tsLoading=false;
+document.getElementById('lX').innerHTML=document.getElementById('dX').innerHTML;
+document.getElementById('lfState').insertAdjacentHTML('beforeend',UF.map(function(u){return '<option>'+u+'</option>';}).join(''));
+document.getElementById('lfCult').innerHTML=CULT.map(function(c){return '<label><input type="checkbox" name="cultures" value="'+c[0]+'">'+c[1]+'</label>';}).join('');
+document.getElementById('lfConsentText').textContent=MAT.consentText;
+
+function ensureTs(){
+  if(window.turnstile){renderTs();return;}
+  if(tsLoading)return;tsLoading=true;
+  window.onLbTs=renderTs;
+  var s=document.createElement('script');
+  s.src='https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onLbTs';
+  s.async=true;s.onerror=function(){tsLoading=false;};
+  document.head.appendChild(s);
+}
+function renderTs(){
+  if(tsId!==null||!window.turnstile)return;
+  tsId=turnstile.render('#lfTs',{sitekey:MAT.turnstile,language:'pt-br',size:'flexible',
+    callback:function(t){tsToken=t;},'expired-callback':function(){tsToken='';},'error-callback':function(){tsToken='';}});
+}
+function resetTs(){tsToken='';if(tsId!==null&&window.turnstile)turnstile.reset(tsId);}
+
+function setView(done){lForm.hidden=done;lDone.hidden=!done;lBot.hidden=done;}
+function msg(t){lMsg.textContent=t||'';}
+function clearErrs(){
+  lForm.querySelectorAll('.err').forEach(function(e){e.textContent='';});
+  lForm.querySelectorAll('[aria-invalid]').forEach(function(e){e.removeAttribute('aria-invalid');});
+  msg('');
+}
+function fieldErr(f,t){
+  var e=lForm.querySelector('.err[data-for="'+f+'"]');if(!e)return false;
+  e.textContent=t;var i=lForm.querySelector('[name="'+f+'"]');if(i)i.setAttribute('aria-invalid','true');return true;
+}
+function openLead(m){
+  lMat=m;lTok=null;
+  document.getElementById('lMeta').textContent=(TYPE[m.type]||'Material')+' gratuito';
+  document.getElementById('lTitle').textContent=m.title;
+  var c=document.getElementById('lCover');c.src=abs(m.coverUrl);c.alt='Capa: '+m.title;
+  document.getElementById('lWa').setAttribute('data-wa',waMat(m.title));
+  document.getElementById('lDoneWa').setAttribute('data-wa','Olá! Baixei o material "'+m.title+'" pelo site da Laborsolo e quero falar com um agrônomo.');
+  bindWa(lDlg);clearErrs();setView(false);
+  if(lDlg.showModal)lDlg.showModal();else lDlg.setAttribute('open','');
+  lDlg.querySelector('.sc').scrollTop=0;
+  ensureTs();
+}
+function body(){
+  function v(n){return lForm.querySelector('[name="'+n+'"]');}
+  return {
+    name:v('name').value.trim(),whatsapp:v('whatsapp').value.trim(),email:v('email').value.trim(),
+    city:v('city').value.trim(),state:v('state').value,profile:(lForm.querySelector('[name=profile]:checked')||{}).value||'',
+    cultures:Array.prototype.map.call(lForm.querySelectorAll('[name=cultures]:checked'),function(i){return i.value;}),
+    material:lMat.slug,consentAccepted:v('consentAccepted').checked,consentVersion:MAT.consentVersion,
+    website:v('website').value,turnstileToken:tsToken
+  };
+}
+function check(b){
+  var e=[],d=b.whatsapp.replace(/\D/g,'');
+  if(b.name.length<2)e.push(['name','Informe seu nome.']);
+  if(b.whatsapp&&(d.length<10||d.length>13))e.push(['whatsapp','WhatsApp com DDD, só números ou com máscara.']);
+  if(b.email&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(b.email))e.push(['email','E-mail inválido.']);
+  if(!b.whatsapp&&!b.email)e.push(['whatsapp','Informe o WhatsApp ou o e-mail.']);
+  if(b.city.length<2)e.push(['city','Informe sua cidade.']);
+  if(UF.indexOf(b.state)<0)e.push(['state','Selecione o estado.']);
+  if(!b.profile)e.push(['profile','Escolha uma opção.']);
+  if(!b.consentAccepted)e.push(['consentAccepted','É preciso autorizar para receber o material.']);
+  return e;
+}
+function download(){
+  if(!lTok||lTok.left<1||Date.now()>lTok.exp-5000){
+    lTok=null;setView(false);msg('O link de download expirou. Envie o formulário de novo.');return;
+  }
+  lTok.left--;
+  var f=document.createElement('form');f.method='post';f.action=MAT.api+'/api/public/materials/download';f.style.display='none';
+  if(INAPP)f.target='_blank';
+  var i=document.createElement('input');i.type='hidden';i.name='token';i.value=lTok.t;f.appendChild(i);
+  document.body.appendChild(f);f.submit();f.remove();
+}
+var DOWN='O cadastro está fora do ar agora. Fale com a gente pelo WhatsApp que enviamos o material.';
+function fail(s,j){
+  var c=j&&j.code;
+  if(s===400&&c==='validation_error'&&j.errors&&j.errors.length){
+    var any=false;j.errors.forEach(function(x){var f=String(x.field||'');f=f.charAt(0).toLowerCase()+f.slice(1);if(f==='contact')f='whatsapp';if(fieldErr(f,x.message))any=true;});
+    if(!any)msg(j.message||'Confira os campos e envie de novo.');return;
+  }
+  if(c==='material_unavailable'){msg('Este material saiu do ar. Atualizamos a lista: escolha outro ou peça pelo WhatsApp.');loadMats();return;}
+  if(c==='turnstile_failed'){msg('Não conseguimos confirmar a verificação de segurança. Envie de novo.');return;}
+  if(s===429){msg('Muitas tentativas a partir da sua rede. Aguarde alguns minutos ou fale com a gente pelo WhatsApp.');return;}
+  msg(DOWN);
+}
+lForm.addEventListener('submit',function(e){
+  e.preventDefault();if(busy||!lMat)return;
+  clearErrs();
+  var b=body(),errs=check(b);
+  if(errs.length){errs.forEach(function(x){fieldErr(x[0],x[1]);});var first=lForm.querySelector('[aria-invalid=true]');if(first)first.focus();return;}
+  if(!tsToken){msg(window.turnstile?'Aguarde a verificação de segurança terminar e envie de novo.':DOWN);ensureTs();return;}
+  busy=true;lSend.disabled=true;var label=lSend.textContent;lSend.textContent='Enviando…';
+  fetchT(MAT.api+'/api/public/leads',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(b)},15000)
+    .then(function(r){return r.json().catch(function(){return null;}).then(function(j){return {s:r.status,j:j};});})
+    .then(function(x){
+      if(x.s===202&&x.j&&x.j.downloadToken){
+        lTok={t:x.j.downloadToken,exp:Date.parse(x.j.expiresAt)||Date.now()+14*60000,left:3};
+        setView(true);download();
+      }else fail(x.s,x.j);
+    },function(){msg(DOWN);})
+    .catch(function(){msg(DOWN);})
+    .then(function(){busy=false;lSend.disabled=false;lSend.textContent=label;resetTs();});
+});
+document.getElementById('lAgain').addEventListener('click',download);
+document.getElementById('lX').addEventListener('click',function(){lDlg.close();});
+lDlg.addEventListener('click',function(e){if(e.target===lDlg)lDlg.close();});
+rail.addEventListener('click',function(e){
+  var a=e.target.closest('[data-mat]');if(!a)return;
+  var m=matBySlug(a.getAttribute('data-mat'));if(!m)return;
+  e.preventDefault();openLead(m);
+});
+// botão "E-book: ..." no detalhe de uma análise
+document.addEventListener('click',function(e){
+  var b=e.target.closest('[data-eb]');if(!b)return;
+  var k=b.getAttribute('data-eb'),m=matForEb(k);
+  if(m&&!m.requiresRegistration&&m.downloadUrl){location.href=abs(m.downloadUrl);return;}
+  if(m&&MAT.turnstile){if(dlg.open)dlg.close();openLead(m);return;}
+  window.open(wa(waMat(EB[k])),'_blank','noopener');
+});
+
+bindWa();
+
+/* header, fab, mobile bar */
+var hdr=document.getElementById('hdr'),fab=document.getElementById('fab'),mbar=document.getElementById('mbar'),hero=document.querySelector('.hero');
+function onScroll(){var y=window.scrollY;hdr.classList.toggle('solid',y>40);
+  var past=y>hero.offsetHeight*.7;var r=document.getElementById('analises').getBoundingClientRect();var inCat=!mq.matches&&r.top<innerHeight*.5&&r.bottom>innerHeight*.5;fab.classList.toggle('on',past&&!inCat);mbar.classList.toggle('on',past);}
+window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+/* menu sheet */
+var sheet=document.getElementById('sheet'),mb=document.getElementById('menuBtn');
+function setSheet(on){sheet.classList.toggle('on',on);mb.setAttribute('aria-expanded',on);document.body.style.overflow=on?'hidden':'';if(on)document.getElementById('sheetX').focus();else mb.focus();}
+mb.addEventListener('click',function(){setSheet(true);});
+document.getElementById('sheetX').addEventListener('click',function(){setSheet(false);});
+sheet.querySelectorAll('nav a').forEach(function(a){a.addEventListener('click',function(){setSheet(false);});});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&sheet.classList.contains('on'))setSheet(false);});
+
+/* ===== MOVIMENTO ===== */
+var RM=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+var FINE=window.matchMedia('(hover:hover) and (pointer:fine)').matches;
+if(!RM){
+  d.classList.add('anim');
+  /* títulos palavra a palavra */
+  document.querySelectorAll('main h2').forEach(function(h){
+    var i=0;
+    (function walk(node){
+      Array.prototype.slice.call(node.childNodes).forEach(function(n){
+        if(n.nodeType===3){
+          var parts=n.textContent.split(/(\s+)/),f=document.createDocumentFragment();
+          parts.forEach(function(p){if(!p)return;if(/^\s+$/.test(p)){f.appendChild(document.createTextNode(p));return;}
+            var w=document.createElement('span');w.className='w';var inner=document.createElement('i');inner.style.setProperty('--i',i++);inner.textContent=p;w.appendChild(inner);f.appendChild(w);});
+          node.replaceChild(f,n);
+        }else if(n.nodeType===1&&!n.classList.contains('w'))walk(n);
+      });
+    })(h);
+    h.setAttribute('data-h','');
+  });
+  /* marcação automática */
+  function mark(sel,type,step,base){document.querySelectorAll(sel).forEach(function(el,k){el.setAttribute('data-a',type);el.style.setProperty('--d',((base||0)+k*(step||0))+'s');});}
+  mark('main .lede:not(.rv)','up',0,.15);
+  mark('.filters','up',0,.1);
+  mark('.viewer','up',0,.2);
+  mark('.band .ctas,.solo .ctas,.dris .ctas,.digital .ctas,.contato .ctas','up',0,.25);
+  mark('.vgrid li','up',.1,.05);
+  mark('.band .bt > div','up',0,.2);
+  mark('.step','up',.15,0);
+  mark('.rec','up',0,.15);
+  mark('.objs .obj','up',.04,0);
+  mark('.pill-rows li','up',.09,.1);
+  mark('.dl div','up',.08,.1);
+  mark('.feat li','up',.05,.1);
+  mark('.chan li','up',.06,.1);
+  mark('.facts li','up',.1,.15);
+  mark('.seal','pop',.06,0);
+  mark('.solo .p1,.sobre .pics .a','clip',0,0);
+  mark('.sobre .pics .b','clip',0,.15);
+  mark('.solo .p2','pop',0,.35);
+  mark('.eb','tilt',.08,0);
+  mark('.screens .desk','up',0,.25);
+  mark('.screens .phone','up',0,.05);
+  mark('.proc .lede','up',0,.3);
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){(e.target._t||[e.target]).forEach(function(t){t.classList.add('is-in');});io.unobserve(e.target);}});},{rootMargin:'0px 0px -12% 0px',threshold:.01});
+  document.querySelectorAll('[data-a],h2[data-h]').forEach(function(el){
+    var obs=el.getAttribute('data-a')==='clip'?el.parentElement:el;
+    if(obs!==el){(obs._t=obs._t||[]).push(el);}
+    io.observe(obs);
+  });
+
+  /* contadores */
+  var co=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;co.unobserve(e.target);
+    var el=e.target,to=+el.dataset.count,t0=performance.now(),dur=1400;
+    (function f(t){var p=Math.min(1,(t-t0)/dur),v=1-Math.pow(1-p,4);el.textContent=el.dataset.pre+Math.round(to*v)+el.dataset.suf;if(p<1)requestAnimationFrame(f);})(t0);
+  });},{threshold:.6});
+  document.querySelectorAll('[data-count]').forEach(function(el){el.textContent=el.dataset.pre+'0'+el.dataset.suf;co.observe(el);});
+
+  /* parallax + progresso + cabeçalho */
+  var par=[
+    {el:document.querySelector('.hero .bg'),k:.35,hero:true},
+    {el:document.querySelector('.proc img'),k:-.12},
+    {el:document.querySelector('.solo .p2'),k:-.1},
+    {el:document.querySelector('.screens .phone'),k:-.06},
+    {el:document.querySelector('.screens .desk'),k:.05},
+    {el:document.querySelector('.sobre .pics .b'),k:-.06},
+  ].filter(function(o){return o.el;});
+  par.forEach(function(o){o.el.setAttribute('data-par','');});
+  var heroIn=document.querySelector('.hero .in'),prog=document.getElementById('prog'),paper=document.querySelector('.dris .paper');
+  var lastY=scrollY,ticking=false;
+  function frame(){
+    ticking=false;var y=scrollY,vh=innerHeight;
+    var max=document.documentElement.scrollHeight-vh;prog.style.transform='scaleX('+(max>0?y/max:0)+')';
+    par.forEach(function(o){
+      if(o.hero){if(y<vh*1.2){o.el.style.transform='translate3d(0,'+(y*o.k)+'px,0)';}return;}
+      var r=o.el.parentElement.getBoundingClientRect();if(r.bottom<-200||r.top>vh+200)return;
+      var c=(r.top+r.height/2-vh/2);o.el.style.transform='translate3d(0,'+(c*o.k)+'px,0)';
+    });
+    if(y<vh){var p=y/vh;heroIn.style.transform='translate3d(0,'+(y*.18)+'px,0)';heroIn.style.opacity=String(1-p*1.15);}
+    if(paper){var r=paper.getBoundingClientRect();if(r.top<vh&&r.bottom>0){var q=Math.max(-1,Math.min(1,(r.top+r.height/2-vh/2)/(vh/2)));paper.style.transform='rotate('+(-1.6-q*5)+'deg) translate3d(0,'+(q*30)+'px,0)';}}
+    if(!document.getElementById('sheet').classList.contains('on')){hdr.classList.toggle('hide',y>lastY&&y>vh*.9);}
+    lastY=y;
+  }
+  window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(frame);}},{passive:true});
+  frame();
+
+  /* faixa reage à velocidade da rolagem */
+  (function(){var tr=document.querySelector('.ticker .track');if(!tr)return;var x=0,vel=0,last=scrollY,lt=performance.now(),on=false,hover=false,half=0;
+    function measure(){half=tr.scrollWidth/2;}measure();addEventListener('resize',measure);
+    tr.parentElement.addEventListener('pointerenter',function(){hover=true;});tr.parentElement.addEventListener('pointerleave',function(){hover=false;});
+    new IntersectionObserver(function(es){on=es[0].isIntersecting;if(on){lt=performance.now();requestAnimationFrame(loop);}}).observe(tr.parentElement);
+    function loop(t){if(!on)return;var dt=Math.min(.05,(t-lt)/1000);lt=t;var dy=scrollY-last;last=scrollY;vel+=(Math.abs(dy)/Math.max(dt,.016)-vel)*.08;
+      var speed=hover?0:(45+Math.min(vel,2400)*.35);x-=speed*dt;if(half&&-x>=half)x+=half;tr.style.transform='translate3d('+x+'px,0,0)';requestAnimationFrame(loop);}
+  })();
+
+  /* botões magnéticos e capas com relevo (só mouse) */
+  if(FINE){
+    document.querySelectorAll('.hero .btn,.band .btn,.contato .ctas .btn,.digital .ctas .btn').forEach(function(b){
+      b.classList.add('mag');
+      b.addEventListener('pointermove',function(e){var r=b.getBoundingClientRect();b.style.transform='translate('+((e.clientX-r.left-r.width/2)*.18)+'px,'+((e.clientY-r.top-r.height/2)*.3)+'px)';});
+      b.addEventListener('pointerleave',function(){b.style.transform='';});
+    });
+    document.querySelectorAll('.eb').forEach(function(a){var cv=a.querySelector('.cv');
+      a.addEventListener('pointermove',function(e){var r=cv.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
+        cv.style.transform='perspective(900px) rotateY('+((x-.5)*10)+'deg) rotateX('+((.5-y)*8)+'deg) translateY(-6px)';cv.style.setProperty('--mx',x*100+'%');cv.style.setProperty('--my',y*100+'%');});
+      a.addEventListener('pointerleave',function(){cv.style.transform='';});
+    });
+  }
+}
+/* indicador deslizante na lista de análises */
+var ind=document.createElement('span');ind.className='ind';list.appendChild(ind);
+function moveInd(){var it=list.querySelector('.item[aria-current="true"]:not([hidden])');if(!it||mq.matches){ind.style.opacity=0;return;}
+  ind.style.opacity=1;ind.style.height=(it.offsetHeight-24)+'px';ind.style.transform='translateY('+(it.offsetTop+12)+'px)';}
+var _sel=select;select=function(id,inst){_sel(id,inst);moveInd();};
+filters.addEventListener('click',function(){setTimeout(moveInd,0);});
+window.addEventListener('resize',moveInd);
+setTimeout(moveInd,50);
+
+/* hero moment */
+var hi=document.querySelector('.hero .bg img');
+function go(){requestAnimationFrame(function(){requestAnimationFrame(function(){d.classList.add('ready');});});}
+if(hi.complete)go();else{hi.addEventListener('load',go);setTimeout(go,1200);}
+})();
+</script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-E7Z58D5B8R');
+(function(){var a=document.getElementById('mapaDoc'),b=document.getElementById('mapaDoc2');if(!a||!b)return;
+try{var d=a.getAttribute('href'),bin=atob(d.split(',')[1]),u=new Uint8Array(bin.length);for(var i=0;i<bin.length;i++)u[i]=bin.charCodeAt(i);
+var url=URL.createObjectURL(new Blob([u],{type:'application/pdf'}));a.href=url;b.href=url;}catch(e){b.href=a.getAttribute('href');}})();
 </script>
-
-<script src="/js/site/app.js"></script>
-
-
-
-            <script src="https://www.google.com/recaptcha/api.js"></script>
-            <script>
-                function onSubmit(token) {
-                    document.getElementById("form-newsletter").submit();
-                }
-            </script>
-        </body>
+<script>
+(function(){
+function A2(id){var L=window.LAB_A||[];for(var i=0;i<L.length;i++)if(L[i].id===id)return L[i];return null;}
+function esc(t){return String(t).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+window.vboxHTML=function(a){return '<div class="vbox" data-a="'+a.id+'"><div class="vfr"><button type="button" class="vstart" data-k="0" aria-label="Assistir: '+esc(a.vid[0][0])+'"><img src="https://i.ytimg.com/vi/'+a.vid[0][1]+'/hqdefault.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="pl"></span><span class="cap"><small>01</small>'+esc(a.vid[0][0])+'</span></button></div><ol class="vch">'+a.vid.map(function(v,i){return '<li><button type="button" data-k="'+i+'"'+(i===0?' class="on"':'')+'><small>'+(i<9?'0':'')+(i+1)+'</small>'+esc(v[0])+'</button></li>';}).join('')+'</ol></div>';};
+function play(box,k){var a=A2(box.getAttribute('data-a'));if(!a)return;var v=a.vid[k];
+ box.querySelector('.vfr').innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+v[1]+'?autoplay=1&rel=0&modestbranding=1" title="'+esc(v[0])+'" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';
+ [].forEach.call(box.querySelectorAll('.vch button'),function(b){b.classList.toggle('on',+b.getAttribute('data-k')===k);});}
+document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('.vbox [data-k]');if(!b)return;e.preventDefault();play(b.closest('.vbox'),+b.getAttribute('data-k'));});
+var pill=document.getElementById('vVid'),w=document.querySelector('.docw'),slot=document.getElementById('vSlot'),back=document.getElementById('vBack');
+pill.addEventListener('click',function(){var a=A2(pill.getAttribute('data-vids'));if(!a)return;slot.innerHTML=vboxHTML(a);w.classList.add('vmode');});
+back.addEventListener('click',function(){slot.innerHTML='';w.classList.remove('vmode');});
+window.vReset=function(){if(slot){slot.innerHTML='';w.classList.remove('vmode');}};
+})();
+</script>
+</body>
 </html>
