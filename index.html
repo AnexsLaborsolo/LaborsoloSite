@@ -1227,7 +1227,7 @@ var DOWN='O cadastro está fora do ar agora. Fale com a gente pelo WhatsApp que 
 function fail(s,j){
   var c=j&&j.code;
   if(s===400&&c==='validation_error'&&j.errors&&j.errors.length){
-    var any=false;j.errors.forEach(function(x){var f=String(x.field||'');f=f.charAt(0).toLowerCase()+f.slice(1);if(fieldErr(f,x.message))any=true;});
+    var any=false;j.errors.forEach(function(x){var f=String(x.field||'');f=f.charAt(0).toLowerCase()+f.slice(1);if(f==='contact')f='whatsapp';if(fieldErr(f,x.message))any=true;});
     if(!any)msg(j.message||'Confira os campos e envie de novo.');return;
   }
   if(c==='material_unavailable'){msg('Este material saiu do ar. Atualizamos a lista: escolha outro ou peça pelo WhatsApp.');loadMats();return;}
